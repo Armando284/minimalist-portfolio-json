@@ -1,0 +1,39 @@
+---
+import Section from '../Section.astro'
+import { basics } from '@cv'
+
+const { profiles } = basics
+---
+
+<Section title="Follow me">
+	<ul>
+		{
+			profiles.map(({ network, url }) => {
+				return (
+					<li>
+						<h5>{network}</h5>
+						<a
+							href="url"
+							target="_blank">
+							{url}
+						</a>
+					</li>
+				)
+			})
+		}
+	</ul>
+</Section>
+
+<style>
+	h5 {
+		font-size: 1.2rem;
+		font-weight: 700;
+		margin: 16px 0;
+	}
+
+	li {
+		font-size: 0.8rem;
+		font-weight: 500;
+		padding: 0.2rem 0.6rem;
+	}
+</style>

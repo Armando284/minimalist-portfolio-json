@@ -1,129 +1,157 @@
 ---
-import Section from "../Section.astro"
+import Section from '../Section.astro'
 
-import { work } from "@cv"
+import { work } from '@cv'
 ---
 
-<Section title="Experiencia laboral">
-  <ul>
-    {
-      work.map(
-        ({ name, startDate, endDate, position, summary, highlights, url }) => {
-          const startYear = new Date(startDate).getFullYear()
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual"
+<Section title="Experience">
+	<ul>
+		{
+			work.map(
+				({
+					name,
+					startDate,
+					endDate,
+					position,
+					summary,
+					highlights,
+					url,
+				}) => {
+					const startYear = new Date(startDate).getFullYear()
+					const endYear =
+						endDate != null
+							? new Date(endDate).getFullYear()
+							: 'Actual'
 
-          return (
-            <li>
-              <article>
-                <header>
-                  <div>
-                    <h3>
-                      <a href={url} title={`Ver ${name}`} target="_blank">
-                        {name}
-                      </a>
-                    </h3>
-                    <h4>{position}</h4>
-                  </div>
+					return (
+						<li>
+							<article>
+								<header>
+									<div>
+										<h3>{position}</h3>
+										<h4>
+											<a
+												href={url}
+												title={`Ver ${name}`}
+												target="_blank">
+												{name}
+											</a>
+										</h4>
+									</div>
 
-                  <div>
-                    <time 
-                      datetime={startDate}
-                      data-title={startDate}>
-                        {startYear}
-                    </time>
-                    {" - "}
-                    <time 
-                      datetime={endDate}
-                      data-title={endDate}>
-                        {endYear}
-                    </time>
-                  </div>
-                </header>
+									<div>
+										<time
+											datetime={startDate}
+											data-title={startDate}>
+											{startYear}
+										</time>
+										{' - '}
+										<time
+											datetime={endDate}
+											data-title={endDate}>
+											{endYear}
+										</time>
+									</div>
+								</header>
 
-                <footer>
-                  <p>{summary}</p>
-                </footer>
-              </article>
-            </li>
-          )
-        }
-      )
-    }
-  </ul>
+								<footer>
+									<p>{summary}</p>
+									<h4>Skills applied:</h4>
+									<ul>
+										<li>
+											<p>{highlights}</p>
+										</li>
+									</ul>
+								</footer>
+							</article>
+						</li>
+					)
+				}
+			)
+		}
+	</ul>
 </Section>
 
 <style>
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
 
-  article h3 {
-    font-weight: 500;
-    color: #111;
-  }
+	article h3 {
+		font-weight: 700;
+		color: #111;
+	}
 
-  article a {
-    color: #111;
-  }
+	article a {
+		color: var(--color-custom-blue-700);
+		font-weight: 600;
+	}
 
-  article a:hover {
-    text-decoration: underline;
-  }
+	article a:hover {
+		text-decoration: underline;
+	}
 
-  article h4 {
-    color: #222;
-    font-weight: 400;
-  }
+	article h4 {
+		color: #222;
+		font-weight: 400;
+	}
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4px;
-  }
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 8px;
+	}
 
-  time {
-    color: #555;
-    font-size: 0.85rem;
-    min-width: 102px;
-    cursor: default;
-  }
+	footer {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+	article footer h4 {
+		font-weight: 600;
+	}
 
-  [data-title]:hover:after {
-    opacity: 1;
-    transition: all 0.1s ease-in-out 0.5s;
-    visibility: visible;
-  }
+	time {
+		color: #555;
+		font-size: 0.85rem;
+		min-width: 102px;
+		cursor: default;
+	}
 
-  [data-title]:after {
-    content: attr(data-title);
-    background-color: #333;
-    color: #fff;
-    font-size: .75rem;
-    font-family: Menlo, Monaco, Lucida Console, "Courier New", monospace;;
-    position: absolute;
-    padding: .2rem .5rem;
-    bottom: -1.4rem;
-    left: 50%;
-    white-space: nowrap;
-    box-shadow: 1px 1px 1px #222222;
-    opacity: 0;
-    border: 1px solid #111111;
-    z-index: 99999;
-    visibility: hidden;
-    border-radius: 6px;
-  }
+	[data-title]:hover:after {
+		opacity: 1;
+		transition: all 0.1s ease-in-out 0.5s;
+		visibility: visible;
+	}
 
-  [data-title] {
-    position: relative;
-  }
+	[data-title]:after {
+		content: attr(data-title);
+		background-color: #333;
+		color: #fff;
+		font-size: 0.75rem;
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			'Courier New',
+			monospace;
+		position: absolute;
+		padding: 0.2rem 0.5rem;
+		bottom: -1.4rem;
+		left: 50%;
+		white-space: nowrap;
+		box-shadow: 1px 1px 1px #222222;
+		opacity: 0;
+		border: 1px solid #111111;
+		z-index: 99999;
+		visibility: hidden;
+		border-radius: 6px;
+	}
 
-  @media (width <= 700px) {
-    time {
-      text-align: right;
-    }
-  }
+	[data-title] {
+		position: relative;
+	}
 </style>

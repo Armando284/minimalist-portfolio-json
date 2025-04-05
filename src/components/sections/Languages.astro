@@ -1,0 +1,29 @@
+---
+import { languages } from '@cv'
+import Section from '@/components/Section.astro'
+import Mail from '@/icons/Mail.astro'
+---
+
+<Section title="Languages">
+	<div class="container">
+		{
+			languages &&
+				languages.map((language) => (
+					<span>
+						{language.language}: {language.fluency}
+					</span>
+				))
+		}
+	</div>
+
+	<style>
+		.container {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			gap: 16px;
+			font-size: 0.8rem;
+		}
+	</style>
+</Section>

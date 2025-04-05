@@ -1,74 +1,57 @@
 ---
-import Section from "../Section.astro"
-import HTML from "@/icons/html.astro"
-import CSS from "@/icons/css.astro"
-import JavaScript from "@/icons/javascript.astro"
-import TypeScript from "@/icons/type.astro"
-import React from "@/icons/react.astro"
-import Node from "@/icons/node.astro"
-import MySQL from "@/icons/sql.astro"
-import Git from "@/icons/git.astro"
-import GitHub from "@/icons/GitHub.astro"
-import Tailwind from "@/icons/tailwind.astro"
-import Next from "@/icons/next.astro"
-import { skills } from "@cv"
-import Swift from "@/icons/swift.astro"
-import SwiftUI from "@/icons/swiftui.astro"
-import Kotlin from "@/icons/kotlin.astro"
-import Flutter from "@/icons/flutter.astro"
+import Section from '../Section.astro'
+import { skills } from '@cv'
 
-const SKILLS_ICONS: Record<string, any> = {
-  HTML,
-  CSS,
-  JavaScript,
-  TypeScript,
-  React,
-  Node,
-  MySQL,
-  Git,
-  GitHub,
-  Next,
-  Tailwind,
-  Swift,
-  SwiftUI,
-  Kotlin,
-  Flutter,
-}
+const personalSkills = skills.filter((skill) =>
+	skill.keywords.includes('personal')
+)
+const professionalSkills = skills.filter(
+	(skill) => !skill.keywords.includes('personal')
+)
 ---
 
-<Section title="Habilidades">
-  <ul>
-    {
-      skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name
-        const Icon = SKILLS_ICONS[iconName]
-
-        return (
-          <li>
-            {Icon && <Icon />} <span>{name}</span>
-          </li>
-        )
-      })
-    }
-  </ul>
+<Section title="Skills">
+	<h3>Personal</h3>
+	<ul>
+		{
+			personalSkills.map(({ name }) => {
+				return (
+					<li>
+						<span>{name}</span>
+					</li>
+				)
+			})
+		}
+	</ul>
+	<h3>Professional</h3>
+	<ul>
+		{
+			professionalSkills.map(({ name }) => {
+				return (
+					<li>
+						<span>{name}</span>
+					</li>
+				)
+			})
+		}
+	</ul>
 </Section>
 
 <style>
-  ul {
-    display: inline-flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
+	h3 {
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin: 16px 0;
+	}
 
-  li {
-    align-items: center;
-    background: #eee;
-    border-radius: 6px;
-    color: black;
-    display: flex;
-    font-size: 0.8rem;
-    font-weight: 500;
-    gap: 4px;
-    padding: 0.2rem 0.6rem;
-  }
+	ul {
+		list-style: disc;
+		list-style-position: inside;
+	}
+
+	li {
+		font-size: 0.8rem;
+		font-weight: 500;
+		padding: 0.2rem 0.6rem;
+	}
 </style>

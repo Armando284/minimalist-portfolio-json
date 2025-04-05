@@ -1,8 +1,8 @@
 ---
-import { basics } from "@cv"
+import { basics } from '@cv'
 
 interface Props {
-  title: string
+	title: string
 }
 
 const { title } = Astro.props
@@ -12,113 +12,168 @@ const { image, summary, url } = basics
 
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{title}</title>
-    <meta name="description" content={summary} />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" as="image" href={image} />
+	<head>
+		<meta charset="UTF-8" />
+		<title>{title}</title>
+		<meta
+			name="description"
+			content={summary}
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width"
+		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/favicon.svg"
+		/>
+		<link
+			rel="preload"
+			as="image"
+			href={image}
+		/>
 
-    <meta property="og:url" content={url} />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={summary} />
-    <meta property="og:image" content="" />
+		<meta
+			property="og:url"
+			content={url}
+		/>
+		<meta
+			property="og:type"
+			content="website"
+		/>
+		<meta
+			property="og:title"
+			content={title}
+		/>
+		<meta
+			property="og:description"
+			content={summary}
+		/>
+		<meta
+			property="og:image"
+			content=""
+		/>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content={url.split("//")[1] ?? ''} />
-    <meta property="twitter:url" content={url} />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={summary} />
-    <meta name="twitter:image" content="" />
-  </head>
-  <body>
-    <slot />
-  </body>
+		<meta
+			name="twitter:card"
+			content="summary_large_image"
+		/>
+		<meta
+			property="twitter:domain"
+			content={url.split('//')[1] ?? ''}
+		/>
+		<meta
+			property="twitter:url"
+			content={url}
+		/>
+		<meta
+			name="twitter:title"
+			content={title}
+		/>
+		<meta
+			name="twitter:description"
+			content={summary}
+		/>
+		<meta
+			name="twitter:image"
+			content=""
+		/>
+	</head>
+	<body>
+		<slot />
+	</body>
 </html>
 
 <style is:global>
-  html {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      "Courier New",
-      Courier,
-      monospace;
-    background: #fff;
-    letter-spacing: -0.025rem;
-  }
+	:root {
+		--color-custom-blue-700: hsl(219, 60%, 50%);
+		--color-custom-red-50: hsl(0, 95%, 98%);
+		--color-custom-red-600: hsl(0, 60%, 50%);
 
-  body,
-  figure {
-    margin: 0;
-    padding: 0;
-  }
+		--hero-card-height: 164px;
+	}
 
-  a {
-    text-decoration: none;
-  }
+	html {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			'Courier New',
+			Courier,
+			monospace;
+		background: #fff;
+		letter-spacing: -0.025rem;
+	}
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+	body,
+	figure {
+		margin: 0;
+		padding: 0;
+	}
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+	a {
+		text-decoration: none;
+	}
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    margin: 0;
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-  }
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-  p {
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin: 0;
-    text-wrap: pretty;
-  }
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
 
-  .print {
-    display: none !important;
-  }
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin: 0;
+		font-family:
+			system-ui,
+			-apple-system,
+			BlinkMacSystemFont,
+			'Segoe UI',
+			Roboto,
+			Oxygen,
+			Ubuntu,
+			Cantarell,
+			'Open Sans',
+			'Helvetica Neue',
+			sans-serif;
+	}
 
-  @media print {
-    .no-print {
-      display: none !important;
-    }
+	p {
+		color: #666;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		margin: 0;
+		text-wrap: pretty;
+	}
 
-    .print {
-      display: block !important;
-    }
+	.print {
+		display: none !important;
+	}
 
-    astro-dev-toolbar {
-      display: none !important;
-    }
+	@media print {
+		.no-print {
+			display: none !important;
+		}
 
-    article {
-      break-inside: avoid;
-    }
-  }
+		.print {
+			display: block !important;
+		}
+
+		astro-dev-toolbar {
+			display: none !important;
+		}
+
+		article {
+			break-inside: avoid;
+		}
+	}
 </style>

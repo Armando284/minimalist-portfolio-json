@@ -1,41 +1,55 @@
 ---
-import Layout from "@/layouts/Layout.astro"
+import Layout from '@/layouts/Layout.astro'
 
-import About from "@/components/sections/About.astro"
-import Education from "@/components/sections/Education.astro"
-import Experience from "@/components/sections/Experience.astro"
-import Hero from "@/components/sections/Hero.astro"
-import Projects from "@/components/sections/Projects.astro"
-import Skills from "@/components/sections/Skills.astro"
-import KeyboardManager from "@/components/KeyboardManager.astro"
+import About from '@/components/sections/About.astro'
+import Education from '@/components/sections/Education.astro'
+import Experience from '@/components/sections/Experience.astro'
+import Hero from '@/components/sections/Hero.astro'
+import Skills from '@/components/sections/Skills.astro'
+import KeyboardManager from '@/components/KeyboardManager.astro'
+import Contacts from '@/components/sections/Contacts.astro'
+import Languages from '@/components/sections/Languages.astro'
+import FollowMe from '@/components/sections/FollowMe.astro'
 
-import { basics } from "@cv"
+import { basics } from '@cv'
 const { name, label } = basics
 ---
 
 <Layout title={`Portafolio de ${name} - ${label}`}>
-  <main>
-    <Hero />
-    <About />
-    <Experience />
-    <Education />
-    <Projects />
-    <Skills />
-  </main>
-
-  <KeyboardManager />
+	<main>
+		<article>
+			<Hero />
+			<Experience />
+		</article>
+		<aside>
+			<Contacts />
+			<About />
+			<Skills />
+			<Languages />
+			<Education />
+			<FollowMe />
+		</aside>
+	</main>
+	<KeyboardManager />
 </Layout>
 
 <style>
-  main {
-    padding: 4rem;
-    margin: auto;
-    width: 100%;
-  }
+	main {
+		padding: 2rem 1rem;
+		margin: auto;
+		width: 100dvw;
+		max-width: 1024px;
+		display: flex;
+		gap: 16px;
+	}
 
-  @media (width <= 700px) {
-    main {
-      padding: 2rem;
-    }
-  }
+	article {
+		width: 70dvw;
+	}
+
+	aside {
+		width: 30dvw;
+		border-left: solid 4px var(--color-custom-blue-700);
+		padding-left: 16px;
+	}
 </style>

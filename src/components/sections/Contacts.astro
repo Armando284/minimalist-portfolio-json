@@ -1,0 +1,53 @@
+---
+import { basics } from '@cv'
+import Section from '@/components/Section.astro'
+import Mail from '@/icons/Mail.astro'
+
+const { name, email } = basics
+---
+
+<Section>
+		<div class="container">
+			{
+				email && (
+          <Mail />
+					<a
+						href={`mailto:${email}`}
+						title={`Send an email to ${name} at ${email}`}
+						target="_blank"
+						rel="noopener noreferrer">
+              {email}
+					</a>
+				)
+			}
+		</div>
+
+	<style>
+		.container{
+      width: 100%;
+      height: var(--hero-card-height);
+      background: var(--color-custom-red-600);
+      color: var(--color-custom-red-50);
+      font-size: 12px;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      gap: 8px;
+      svg{
+        min-width: 18px !important;
+        width: 24px !important;
+        min-height: 18px !important;
+        height: 24px !important;
+      }
+    }
+
+    @media print {
+      .container{
+        -webkit-print-color-adjust: exact; /* Chrome/Safari */
+        print-color-adjust: exact; /* Estándar */
+        color-adjust: exact; /* Firefox */
+      }
+    }
+	</style>
+</Section>

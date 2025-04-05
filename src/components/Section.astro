@@ -4,7 +4,10 @@ const { title } = Astro.props
 ---
 
 <section>
-  {title && <h2>{title}</h2>}
+  {title && (
+  <h2>{title}</h2>
+  <hr/>
+  )}
   <slot />
 </section>
 
@@ -21,13 +24,22 @@ const { title } = Astro.props
   h2 {
     margin-bottom: 8px;
     font-weight: 700;
-    line-height: 1.5;
-    font-size: 1.5rem;
+    line-height: 1.6;
+    font-size: 1.6rem;
   }
 
-  @media (width <= 700px) {
-    section {
-      margin-bottom: 38px;
-    }
+  hr{
+    width: 40px;
+    height: 4px;
+    background: var(--color-custom-blue-700);
+    margin-bottom: 16px;
+  }
+
+  @media print{
+    hr {
+    -webkit-print-color-adjust: exact; /* Chrome/Safari */
+    print-color-adjust: exact; /* Estándar */
+    color-adjust: exact; /* Firefox */
+  }
   }
 </style>
