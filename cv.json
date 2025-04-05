@@ -1,189 +1,400 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full Stack Developer con más de 15 años de experiencia & Creador de Contenido de Programación",
-    "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+    "name": "Armando Peña Tamayo",
+    "label": "Senior Software Engineer",
+    "image": "",
+    "email": "armando.pena@ntsprint.com",
+    "phone": "+53 51424595",
+    "url": "https://armandodev.vercel.app",
+    "summary": "I'm a Software Engineer specializing in FullStack web development. I mainly have experience with React, Angular and Node.js. I enjoy collaborating with teams and strive to write clean, and efficient code. I'm also interested in Game Development using Unity, and creating engaging digital experiences. I love to stay updated with the latest web development trends and share my learnings on my blog.",
     "location": {
       "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "España"
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
+        "username": "armando-pe%C3%B1a-7622bb20a",
+        "url": "https://linkedin.com/in/armando-pe%C3%B1a-7622bb20a/"
       },
       {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
+        "network": "Medium",
+        "username": "armanp",
+        "url": "https://medium.com/@armanp"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "Armando284",
+        "url": "https://github.com/Armando284"
       }
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Divulgador sobre Programación Web",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
+      "name": "AI Driven Operation / NTSprint",
+      "position": "Senior Full-Stack Developer",
+      "url": "",
+      "startDate": "2025-01-31",
       "endDate": null,
-      "summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+      "summary": "I designed de system and implemented a full-stack AI-powered letter generation system for an insurance company, handling the entire architecture and development independently. The solution included a Vite + React + TypeScript frontend deployed on Vercel and a modular Node.js + Express backend hosted on Render. The system integrated PostgreSQL (Supabase) for the database and Auth0 for authentication, while custom OpenAI assistants were embedded in the backend. All sensitive data was encrypted to ensure compliance with security regulations and legal requirements.",
       "highlights": [
-        "Started the company"
+        "Vite, React, Tailwind CSS, TypeScript, Node.js, Express, JavaScript, PostgreSQL, Supabase, Auth0, OpenAI API, Custom AI Asistants, Data Encryption, Vercel, Render, Cloud Integration"
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "name": "QSpace / NTSprint",
+      "position": "Senior Back-End Developer",
+      "url": "",
+      "startDate": "2024-10-01",
+      "endDate": "2025-01-31",
+      "summary": "I developed and maintained the project's API using AWS Lambda to build a microservices architecture with Node.js and Express. I expanded functionality across multiple APIs and enabled seamless integrations between modules using RESTful principles. Additionally, I implemented AWS services for centralized logging and error filtering, ensuring critical issues were automatically emailed to clients. I integrated email notification systems and optimized performance by refactoring inefficient code. I also enforced JSDoc standards to document all microservices, improving code maintainability and team collaboration.",
       "highlights": [
-        "Started the company"
+        "AWS, JavaScript, Node.js, Express, Microservices, JSDoc.c"
       ]
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
+      "name": "Explora/ NTSprint",
+      "position": "Senior Full-Stack Developer",
+      "startDate": "2024-03-01",
+      "endDate": "2024-09-01",
+      "summary": "I develop and maintain two Angular frontends (admin and user-facing) with Tailwind CSS, integrating a Lumen-based BFF and Squidex CMS for dynamic content. Keycloak handles authentication, while my role involves feature enhancements, bug fixes, and UI/UX improvements. I also refactor code for better maintainability and optimize performance through image handling and search/sort algorithms. I boosted SEO by adding alt text, meta keywords, and semantic HTML, improving search visibility. Team turnover caused inconsistent code quality, which we mitigated with style guides, linters, and daily standups. These measures ensured consistency and streamlined issue resolution despite frequent personnel changes. A key challenge was Squidex’s lack of reference data sorting, requiring custom solutions to meet project needs. My contributions—from performance tuning to overcoming CMS limitations—strengthened the application’s scalability, usability, and long-term maintainability.",
       "highlights": [
-        "Started the company"
+        "Angular, TailwindCSS, Google Analytics, SEO, Vercel, Lumen, Squidex, Keycloak."
+      ]
+    },
+    {
+      "name": "Wassermeloni/ Aleph Engineer",
+      "position": "Semi-Senior Front-End Developer",
+      "startDate": "2023-03-01",
+      "endDate": "2024-01-01",
+      "summary": "I modernized a legacy Angular/Rails app by upgrading Angular, fixing dependencies, and refactoring code while resolving 800 broken tests using TDD. Implemented a CI/CD pipeline, cutting deployment costs by 50% and improving security through dependency updates. The overhaul reduced technical debt, enhanced maintainability, and streamlined development with better versioning and testing.",
+      "highlights": [
+        "Laravel, PHP, Vue, Bootstrap, Auth0, MySQL."
+      ]
+    },
+    {
+      "name": "Imagined Earth/ Aleph Engineer",
+      "position": "Semi-Senior Front-End/Mobile Developer",
+      "startDate": "2021-01-01",
+      "endDate": "2023-03-01",
+      "summary": "I led the rebuild of an Ionic/Angular mobile app, fix memory leaks, slow authentication (7min → 3s), and inefficient APIs. Added features like Google Maps (cut costs 90%), in-app sales, and a UI redesign while optimizing Laravel backend performance. Deployed updates to Google Play/App Store and integrated push notifications, reducing errors and downtime. These improvements boosted retention and slashed server costs.",
+      "highlights": [
+        "Angular, Ionic, Laravel, Google Analytics, Google Maps, Web Sockets, Google Play, Apps Store."
+      ]
+    },
+    {
+      "name": "Events Administration/ Freelancer",
+      "position": "Junior FrontEnd Developer",
+      "startDate": "2020-07-01",
+      "endDate": "2020-12-01",
+      "summary": "Web application to manage events assistance, costs, price and publication for companies on LATAM.",
+      "highlights": [
+        "Odoo, Angular."
+      ]
+    },
+    {
+      "name": "Remittances Administration/ Freelancer",
+      "position": "Junior Full-Stack Developer",
+      "startDate": "2019-12-01",
+      "endDate": "2020-05-01",
+      "summary": "Web application to manage sending remittances from other countries to familly members in Cuba, involved the use of Tropipay API and secure user authentication and person validation.",
+      "highlights": [
+        "React, Laravel, Bootstrap, Auth0, Tropipay API, MySQL."
+      ]
+    },
+    {
+      "name": "HHRR Administration/ Freelancer",
+      "position": "Junior Full-Stack Developer",
+      "startDate": "2018-01-01",
+      "endDate": "2019-05-01",
+      "summary": "System to manage human resources, work hours, payments, holidays, vacacions and other work related details. Extended to manage economics and warehouse resources.",
+      "highlights": [
+        "Laravel, PHP, Vue, Bootstrap, Auth0, MySQL."
       ]
     }
   ],
   "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
+    "organization": "",
+    "position": "",
+    "url": "",
+    "startDate": "",
+    "endDate": "",
+    "summary": "",
     "highlights": [
-      "Awarded 'Volunteer of the Month'"
+      ""
     ]
   }],
   "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
+    "institution": "University of Informatic Sciences",
+    "url": "",
     "area": "Ingeniero de Software",
     "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
+    "startDate": "2009-09-01",
+    "endDate": "2013-10-31",
+    "score": "",
     "courses": [
-      "DB1101 - Basic SQL"
+      ""
     ]
   }],
   "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
+    "title": "",
+    "date": "",
+    "awarder": "",
+    "summary": ""
   }],
   "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
+    "name": "",
+    "date": "",
+    "issuer": "",
+    "url": ""
   }],
   "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
+    "name": "",
+    "publisher": "",
+    "releaseDate": "",
+    "url": "",
+    "summary": ""
   }],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Master",
+      "name": "Teamwork and collaboration skills to work effectively in a group environment.",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend"
+        "personal"
       ]
     },
     {
-      "name": "CSS",
-      "level": "Master",
+      "name": "Leadership.",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Diseño Responsive"
+        "personal"
       ]
     },
     {
-      "name": "JavaScript",
-      "level": "Master",
+      "name": "Problem-Solving.",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+        "personal"
       ]
     },
     {
-      "name": "Tailwind",
-      "level": "Avanzado",
+      "name": "Self-Learning.",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+        "personal"
       ]
     },
     {
-      "name": "TypeScript",
-      "level": "Avanzado",
+      "name": "Adaptability.",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+        "personal"
       ]
     },
     {
-      "name": "Node",
-      "level": "Avanzado",
+      "name": "Time Management and organization.",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+        "personal"
       ]
     },
     {
-      "name": "MySQL",
-      "level": "Avanzado",
+      "name": "Creativity and the ability to think outside.",
+      "level": "",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "personal"
       ]
     },
     {
-      "name": "Git",
-      "level": "Avanzado",
+      "name": "System Design & Architechture",
+      "level": "",
       "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente"
+        ""
       ]
     },
     {
-      "name": "GitHub",
-      "level": "Avanzado",
+      "name": "AWS",
+      "level": "",
       "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+        ""
       ]
     },
     {
-      "name": "Next.js",
-      "level": "Avanzado",
+      "name": "Google Analytics",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
+        ""
+      ]
+    },
+    {
+      "name": "Google Cloud Services",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Firebase",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Supabase",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Vercel",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Auth0",
+      "level": "",
+      "keywords": [
+        ""
       ]
     },
     {
       "name": "React",
-      "level": "Avanzado",
+      "level": "",
       "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+        ""
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Express.js",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Astro",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "API Rest",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "HTML/CSS",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "TailwindCSS",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "SQL Server",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Mongoose",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Unity",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "C#",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": [
+        ""
       ]
     }
   ],
@@ -198,78 +409,72 @@
     }
   ],
   "interests": [{
-    "name": "Wildlife",
+    "name": "",
     "keywords": [
-      "Ferrets",
-      "Unicorns"
+      "",
+      ""
     ]
   }],
   "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
+    "name": "",
+    "reference": ""
   }],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "",
       "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "description": "",
       "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
+        ""
       ],
-      "url": "https://mars.codes"
+      "url": ""
     },
     {
-      "name": "AdventJS",
+      "name": "",
       "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "description": "",
       "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
+        ""
       ],
-      "url": "https://adventjs.dev"
+      "url": ""
     },
     {
-      "name": "Codember",
+      "name": "",
       "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
+      "description": "",
       "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
+        ""
       ],
-      "url": "https://codember.dev"
+      "url": ""
     },
     {
-      "name": "codi.link",
+      "name": "",
       "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
+      "description": "",
       "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
+        ""
       ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
+      "url": "",
+      "github": ""
     },
     {
-      "name": "Pruebas Técnicas",
+      "name": "",
       "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
+      "description": "",
       "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
+        ""
       ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
+      "url": "",
+      "github": ""
     },
     {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
+      "name": "",
+      "description": "",
       "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
+        "",
+        ""
       ],
-      "url": "https://miduconf.com"
+      "url": ""
     }
   ]
 }
