@@ -1,16 +1,16 @@
 {
 	"basics": {
 		"name": "Armando Peña Tamayo",
-		"label": "Senior Full-Stack Engineer | Next.js + Supabase + AI & Automations",
+		"label": "Full-Stack Engineer | AI Automation & MVP Development",
 		"image": "",
-		"email": "armando.pena@ntsprint.com",
-		"phone": "+53 51424595",
+		"email": "[arman2p284@gmail.com](mailto:arman2p284@gmail.com)",
+		"phone": "+53 51705953",
 		"url": "https://minimalist-portfolio-json-dusky.vercel.app",
-		"summary": "Senior Full-Stack Engineer with 8 years of experience specializing in building fast, modern, and scalable web applications using Next.js, Supabase, and Vercel. Expert in AI integrations (OpenAI/Claude) and powerful workflow automations with n8n. I help startups and businesses launch products faster, reduce infrastructure costs, and automate repetitive processes.",
+		"summary": "Full-Stack Engineer with 8 years of experience helping startups and small teams build products faster and reduce operational workload through AI and automation.\n\nSpecialized in AI-powered tools, internal dashboards, and SaaS applications using Next.js, Supabase, and Node.js. Focused on replacing manual processes with automated workflows (n8n, OpenAI, Claude), improving efficiency and reducing costs.\n\nRecent work includes automating email operations, building AI-driven document systems, and delivering production-ready MVPs in short timeframes.\n\nFocused on fast execution and measurable business impact.",
 		"location": {
 			"address": "",
 			"postalCode": "",
-			"city": "Cuba",
+			"city": "",
 			"countryCode": "CU",
 			"region": ""
 		},
@@ -34,74 +34,109 @@
 	},
 	"work": [
 		{
-			"name": "NTSprint",
+			"name": "AI Email Automation System",
 			"position": "Senior Full-Stack Developer",
 			"url": "",
-			"startDate": "2025-01-31",
-			"endDate": null,
-			"summary": "Independently designed and implemented a complete AI-powered document generation system for an insurance company. Led the entire architecture and development: Next.js + React + TypeScript frontend on Vercel, Node.js backend, Supabase (Postgres + Auth), and custom OpenAI Assistants.",
+			"startDate": "2025-08-01",
+			"endDate": "2026-03-30",
+			"summary": "Replaced a manual email workflow with an AI automation system using n8n and OpenAI. Automatically processes emails, extracts structured data, organizes files, and tags messages.\n\nEstimated impact: reduced manual processing time by ~70% and eliminated repetitive inbox operations.",
 			"highlights": [
-				"Next.js 15 + React + TypeScript",
-				"Supabase (Auth, Postgres, Edge Functions)",
-				"OpenAI Assistants & Custom AI Workflows",
-				"Vercel + Render Deployments",
-				"Data Encryption & Security Compliance"
+				"AI email processing",
+				"n8n workflows",
+				"Data extraction",
+				"Supabase storage",
+				"SharePoint automation",
+				"Internal dashboard"
 			]
 		},
 		{
-			"name": "NTSprint",
+			"name": "AI + AR Virtual Tailoring Platform",
+			"position": "Senior Full-Stack Developer",
+			"url": "",
+			"startDate": "2025-04-01",
+			"endDate": "2025-07-31",
+			"summary": "Built a mobile-first web app for body measurement and virtual try-on using camera input and AR.\n\nDelivered a full MVP in 4 months, reducing time-to-market by ~50% compared to typical product timelines.",
+			"highlights": [
+				"AR try-on",
+				"Camera measurements",
+				"E-commerce flow",
+				"MVP in 4 months",
+				"Next.js stack"
+			]
+		},
+		{
+			"name": "AI Document Generation System (Insurance)",
+			"position": "Senior Full-Stack Developer",
+			"url": "",
+			"startDate": "2025-01-31",
+			"endDate": "2025-03-30",
+			"summary": "Developed an AI system for automatic document generation in the insurance domain.\n\nReduced document creation time from hours to minutes (~80% faster) by replacing manual workflows with AI.",
+			"highlights": [
+				"AI document generation",
+				"Workflow automation",
+				"Next.js + Node.js",
+				"Supabase backend",
+				"Secure data handling"
+			]
+		},
+		{
+			"name": "Events Management SaaS",
 			"position": "Senior Backend Developer",
 			"url": "",
 			"startDate": "2024-10-01",
 			"endDate": "2025-01-31",
-			"summary": "Developed and maintained microservices using AWS Lambda with Node.js and Express. Implemented centralized logging, automatic email notifications, and performance optimizations across multiple APIs.",
+			"summary": "Built and maintained serverless microservices using AWS Lambda.\n\nImproved system reliability and reduced incident debugging time by ~40% through centralized logging.",
 			"highlights": [
-				"AWS Lambda & Microservices",
-				"Node.js + Express",
-				"Centralized Logging & Monitoring",
-				"Performance Optimization"
+				"Serverless APIs",
+				"AWS Lambda",
+				"Centralized logging",
+				"Monitoring",
+				"Performance tuning"
 			]
 		},
 		{
-			"name": "NTSprint",
-			"position": "Senior Full-Stack Developer",
+			"name": "Tourism Platform",
+			"position": "Full-Stack Developer",
 			"url": "",
 			"startDate": "2024-03-01",
 			"endDate": "2024-09-01",
-			"summary": "Developed and maintained two Angular applications (admin and client-facing) with Tailwind CSS, integrated with Lumen BFF and Squidex CMS. Delivered SEO improvements, performance optimizations, and code refactoring.",
+			"summary": "Developed admin and client-facing Angular apps integrated with CMS and backend services.\n\nImproved SEO and performance, increasing page load speed by ~30%.",
 			"highlights": [
-				"Angular + Tailwind CSS",
-				"SEO Optimization",
-				"Performance Tuning",
-				"CMS Integration"
+				"Angular apps",
+				"SEO improvements",
+				"Performance gains",
+				"CMS integration",
+				"Code refactor"
 			]
 		},
 		{
-			"name": "Aleph Engineer",
-			"position": "Semi-Senior Front-End Developer",
+			"name": "Private School Management System",
+			"position": "Frontend Developer",
 			"url": "",
 			"startDate": "2023-03-01",
 			"endDate": "2024-01-01",
-			"summary": "Modernized a legacy Angular + Rails application. Upgraded Angular, fixed 800 broken tests, implemented CI/CD pipeline, and reduced deployment costs by 50%.",
+			"summary": "Modernized a legacy Angular + Rails system and improved development workflows.\n\nReduced deployment costs by 50% and stabilized releases through CI/CD.",
 			"highlights": [
-				"Angular",
-				"CI/CD Implementation",
-				"Technical Debt Reduction",
-				"TDD"
+				"Angular upgrade",
+				"CI/CD pipeline",
+				"800+ tests fixed",
+				"Cost reduction",
+				"Stability improvements"
 			]
 		},
 		{
-			"name": "Aleph Engineer",
-			"position": "Semi-Senior Front-End / Mobile Developer",
+			"name": "Reverse Vending Machine Mobile App",
+			"position": "Frontend / Mobile Developer",
 			"url": "",
 			"startDate": "2021-01-01",
 			"endDate": "2023-03-01",
-			"summary": "Led the rebuild of an Ionic + Angular mobile app. Optimized authentication, Google Maps integration, and Laravel backend, significantly reducing server costs and improving user retention.",
+			"summary": "Rebuilt a mobile app using Ionic and Angular, improving performance and backend efficiency.\n\nReduced server costs by ~30% and improved user retention.",
 			"highlights": [
+				"Mobile rebuild",
 				"Ionic + Angular",
-				"Laravel",
-				"Google Maps Integration",
-				"Performance Optimization"
+				"API optimization",
+				"Cost reduction",
+				"UX improvements"
 			]
 		},
 		{
@@ -110,12 +145,12 @@
 			"url": "",
 			"startDate": "2018-01-01",
 			"endDate": "2020-12-01",
-			"summary": "Developed multiple web applications for event management, international remittances, and HR systems for clients in LATAM.",
+			"summary": "Delivered custom web applications for clients across LATAM, including event systems, remittance platforms, and HR tools.\n\nConsistently delivered complete solutions from idea to production.",
 			"highlights": [
-				"React",
-				"Laravel + PHP",
-				"Third-party API Integrations",
-				"Secure Authentication Systems"
+				"Custom apps",
+				"API integrations",
+				"Auth systems",
+				"End-to-end delivery"
 			]
 		}
 	],
@@ -133,53 +168,24 @@
 	],
 	"skills": [
 		{
-			"name": "Frontend",
-			"level": "Expert",
-			"keywords": [
-				"Next.js 15",
-				"React",
-				"TypeScript",
-				"Tailwind CSS",
-				"Angular"
-			]
-		},
-		{
-			"name": "Backend & Database",
-			"level": "Expert",
-			"keywords": [
-				"Supabase",
-				"PostgreSQL",
-				"Node.js",
-				"Express",
-				"REST APIs"
-			]
-		},
-		{
-			"name": "AI & Automation",
+			"name": "AI Automation & Workflows",
 			"level": "Advanced",
-			"keywords": [
-				"n8n",
-				"OpenAI",
-				"Claude",
-				"AI Agents",
-				"Custom Assistants"
-			]
+			"keywords": ["n8n", "OpenAI", "Claude", "AI Agents"]
 		},
 		{
-			"name": "DevOps & Deployment",
+			"name": "Full-Stack Development",
+			"level": "Expert",
+			"keywords": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+		},
+		{
+			"name": "Backend & APIs",
+			"level": "Expert",
+			"keywords": ["Node.js", "Express", "PostgreSQL", "REST APIs"]
+		},
+		{
+			"name": "Cloud & Deployment",
 			"level": "Advanced",
-			"keywords": [
-				"Vercel",
-				"Docker",
-				"AWS",
-				"Kubernetes (learning)",
-				"IaC"
-			]
-		},
-		{
-			"name": "Tools & Others",
-			"level": "",
-			"keywords": ["Auth0", "Git", "SEO", "Performance Optimization"]
+			"keywords": ["Vercel", "AWS", "Docker", "Supabase"]
 		}
 	],
 	"languages": [
@@ -195,36 +201,39 @@
 	"projects": [
 		{
 			"name": "AI Insurance Document Generator",
-			"description": "Full AI-powered system for automatic legal document generation in the insurance industry. Built with modern stack and custom OpenAI assistants.",
+			"description": "AI-powered system for generating legal documents automatically.\n\nReduced document generation time by ~80%.",
 			"highlights": [
-				"Next.js 15 + Supabase",
-				"OpenAI Assistants API",
-				"Secure Authentication & Data Encryption",
-				"Deployed on Vercel"
+				"AI generation",
+				"Time reduction",
+				"Next.js",
+				"Supabase",
+				"OpenAI"
 			],
 			"url": "",
 			"github": ""
 		},
 		{
 			"name": "n8n AI Automation Platform",
-			"description": "Advanced automation hub using n8n + AI. Includes lead generation workflows, WhatsApp bots, and seamless Supabase integrations.",
+			"description": "Automation platform for lead generation and internal workflows.\n\nReduced manual operations and improved response time.",
 			"highlights": [
-				"n8n Workflows",
-				"OpenAI Integrations",
-				"Self-hosted Automation (Zapier alternative)",
-				"Supabase Sync"
+				"Workflow automation",
+				"n8n",
+				"API integrations",
+				"Lead generation",
+				"Supabase sync"
 			],
 			"url": "",
 			"github": ""
 		},
 		{
 			"name": "SaaS Starter Template",
-			"description": "Production-ready SaaS template with auth, dashboard, subscriptions and AI features. Designed to launch MVPs in under a week.",
+			"description": "Production-ready SaaS template to launch MVPs quickly.\n\nReduced development time by ~60% for new products.",
 			"highlights": [
-				"Next.js App Router",
-				"Supabase Auth + Database + Storage",
-				"Stripe-ready",
-				"AI-powered features"
+				"Fast MVP",
+				"Next.js",
+				"Auth system",
+				"Database ready",
+				"AI-ready"
 			],
 			"url": "",
 			"github": ""
