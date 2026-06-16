@@ -189,43 +189,56 @@
 	],
 	"projects": [
 		{
-			"name": "AI Insurance Document Generator",
-			"description": "AI-powered system for generating legal documents automatically.\n\nReduced document generation time by ~80%.",
+			"name": "adev-lru",
+			"description": "Lightweight and highly efficient LRU Cache library for JavaScript and TypeScript.\n\nPublished on NPM with support for persistence (LocalStorage + IndexedDB), TTL, and O(1) operations.",
 			"highlights": [
-				"AI generation",
-				"Time reduction",
-				"Next.js",
-				"Supabase",
-				"OpenAI"
+				"O(1) Performance",
+				"NPM Package",
+				"Data Structures",
+				"TypeScript",
+				"Persistence Layer"
 			],
-			"url": "",
-			"github": ""
+			"url": "https://www.npmjs.com/package/adev-lru",
+			"github": "https://github.com/Armando284/adev-lru"
 		},
 		{
-			"name": "n8n AI Automation Platform",
-			"description": "Automation platform for lead generation and internal workflows.\n\nReduced manual operations and improved response time.",
+			"name": "tkt",
+			"description": "Blazing-fast Go CLI that turns TODO comments into tickets, auto-manages git branches, tracks time, and integrates with Neovim.",
 			"highlights": [
-				"Workflow automation",
-				"n8n",
-				"API integrations",
-				"Lead generation",
-				"Supabase sync"
+				"Developer Productivity",
+				"Go CLI",
+				"Git Integration",
+				"Time Tracking",
+				"Real-time File Watcher"
 			],
 			"url": "",
-			"github": ""
+			"github": "https://github.com/Armando284/tkt"
 		},
 		{
-			"name": "SaaS Starter Template",
-			"description": "Production-ready SaaS template to launch MVPs quickly.\n\nReduced development time by ~60% for new products.",
+			"name": "Collaborative Whiteboard",
+			"description": "Low-bandwidth real-time collaborative drawing application optimized for unstable networks and Apple Pencil.",
 			"highlights": [
-				"Fast MVP",
-				"Next.js",
-				"Auth system",
-				"Database ready",
-				"AI-ready"
+				"Real-time Systems",
+				"WebSockets",
+				"Data Compression (RLE)",
+				"Performance Optimization",
+				"Vanilla JS"
 			],
-			"url": "",
-			"github": ""
+			"url": "https://whiteboard-five-gamma.vercel.app/",
+			"github": "https://github.com/Armando284/whiteboard"
+		},
+		{
+			"name": "Life Simulation",
+			"description": "Neuroevolution simulation combining Neural Networks and Genetic Algorithms. Virtual creatures evolve behaviors to survive in a dynamic environment.",
+			"highlights": [
+				"Neural Networks",
+				"Genetic Algorithms",
+				"Canvas Visualization",
+				"Artificial Life",
+				"Algorithmic Thinking"
+			],
+			"url": "https://life-simulation-self.vercel.app/",
+			"github": "https://github.com/Armando284/life-simulation"
 		}
 	],
 	"certificates": [],
