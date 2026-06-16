@@ -28,15 +28,15 @@ import { work } from '@cv'
 							<article>
 								<header>
 									<div>
-										<h3>{position}</h3>
-										<h4>
+										<h2>
 											<a
 												href={url}
 												title={`Ver ${name}`}
 												target="_blank">
 												{name}
 											</a>
-										</h4>
+										</h2>
+                    <h4>{position}</h4>
 									</div>
 
 									<div>
@@ -53,15 +53,17 @@ import { work } from '@cv'
 										</time>
 									</div>
 								</header>
-
-								<footer>
 									<p>{summary}</p>
-									<h4>Highlights:</h4>
-									<ul>
-										<li>
-											<p>{highlights.join(' • ')}</p>
-										</li>
-									</ul>
+								<footer>
+                  {highlights.length > 0 && (
+                        highlights.map((h) => (
+                          <span
+                            class="tag"
+                            >
+                            {h}
+                          </span>
+                        ))
+                      )}
 								</footer>
 							</article>
 						</li>
@@ -79,11 +81,6 @@ import { work } from '@cv'
 		gap: 32px;
 	}
 
-	article h3 {
-		font-weight: 700;
-		color: #111;
-	}
-
 	article a {
 		color: var(--color-custom-blue-700);
 		font-weight: 600;
@@ -91,11 +88,6 @@ import { work } from '@cv'
 
 	article a:hover {
 		text-decoration: underline;
-	}
-
-	article h4 {
-		color: #222;
-		font-weight: 400;
 	}
 
 	header {
@@ -107,7 +99,6 @@ import { work } from '@cv'
 
 	footer {
 		display: flex;
-		flex-direction: column;
 		gap: 8px;
 	}
 	article footer h4 {
@@ -115,7 +106,6 @@ import { work } from '@cv'
 	}
 
 	time {
-		color: #555;
 		font-size: 0.85rem;
 		min-width: 102px;
 		cursor: default;
@@ -129,8 +119,8 @@ import { work } from '@cv'
 
 	[data-title]:after {
 		content: attr(data-title);
-		background-color: #333;
-		color: #fff;
+		background-color: var(--color-deep-sea-900);
+		color: var(--color-deep-sea-50);
 		font-size: 0.75rem;
 		font-family:
 			Menlo,
@@ -143,9 +133,9 @@ import { work } from '@cv'
 		bottom: -1.4rem;
 		left: 50%;
 		white-space: nowrap;
-		box-shadow: 1px 1px 1px #222222;
+		box-shadow: 1px 1px 1px var(--color-deep-sea-300);
 		opacity: 0;
-		border: 1px solid #111111;
+		border: 1px solid var(--color-deep-sea-300);
 		z-index: 99999;
 		visibility: hidden;
 		border-radius: 6px;
@@ -154,4 +144,6 @@ import { work } from '@cv'
 	[data-title] {
 		position: relative;
 	}
+
+  
 </style>

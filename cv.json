@@ -2,17 +2,17 @@
 	"basics": {
 		"name": "Armando Peña Tamayo",
 		"label": "Full-Stack Engineer | AI Automation & MVP Development",
-		"image": "",
-		"email": "[arman2p284@gmail.com](mailto:arman2p284@gmail.com)",
+		"image": "/me.webp",
+		"email": "arman2p284@gmail.com",
 		"phone": "+53 51705953",
 		"url": "https://minimalist-portfolio-json-dusky.vercel.app",
-		"summary": "Full-Stack Engineer with 8 years of experience helping startups and small teams build products faster and reduce operational workload through AI and automation.\n\nSpecialized in AI-powered tools, internal dashboards, and SaaS applications using Next.js, Supabase, and Node.js. Focused on replacing manual processes with automated workflows (n8n, OpenAI, Claude), improving efficiency and reducing costs.\n\nRecent work includes automating email operations, building AI-driven document systems, and delivering production-ready MVPs in short timeframes.\n\nFocused on fast execution and measurable business impact.",
+		"summary": "Full‑stack engineer with 8 years of experience building AI‑powered tools, internal dashboards, and fast MVPs for startups using Next.js, Supabase, Node.js, and automated workflows like n8n and OpenAI. I focus on replacing manual operations with automation to reduce costs, improve efficiency, and deliver measurable business impact.",
 		"location": {
 			"address": "",
-			"postalCode": "",
-			"city": "",
+			"postalCode": "82300",
+			"city": "Banes",
 			"countryCode": "CU",
-			"region": ""
+			"region": "Holguín"
 		},
 		"profiles": [
 			{
@@ -41,12 +41,12 @@
 			"endDate": "2026-03-30",
 			"summary": "Replaced a manual email workflow with an AI automation system using n8n and OpenAI. Automatically processes emails, extracts structured data, organizes files, and tags messages.\n\nEstimated impact: reduced manual processing time by ~70% and eliminated repetitive inbox operations.",
 			"highlights": [
-				"AI email processing",
-				"n8n workflows",
-				"Data extraction",
-				"Supabase storage",
-				"SharePoint automation",
-				"Internal dashboard"
+				"AI processing",
+				"n8n",
+				"Extraction",
+				"Supabase",
+				"SharePoint",
+				"Dashboard"
 			]
 		},
 		{
@@ -58,10 +58,10 @@
 			"summary": "Built a mobile-first web app for body measurement and virtual try-on using camera input and AR.\n\nDelivered a full MVP in 4 months, reducing time-to-market by ~50% compared to typical product timelines.",
 			"highlights": [
 				"AR try-on",
-				"Camera measurements",
-				"E-commerce flow",
-				"MVP in 4 months",
-				"Next.js stack"
+				"Camera input",
+				"E-commerce",
+				"Fast MVP",
+				"Next.js"
 			]
 		},
 		{
@@ -72,11 +72,11 @@
 			"endDate": "2025-03-30",
 			"summary": "Developed an AI system for automatic document generation in the insurance domain.\n\nReduced document creation time from hours to minutes (~80% faster) by replacing manual workflows with AI.",
 			"highlights": [
-				"AI document generation",
-				"Workflow automation",
-				"Next.js + Node.js",
-				"Supabase backend",
-				"Secure data handling"
+				"AI docs",
+				"Automation",
+				"Next.js",
+				"Supabase",
+				"Security"
 			]
 		},
 		{
@@ -87,11 +87,11 @@
 			"endDate": "2025-01-31",
 			"summary": "Built and maintained serverless microservices using AWS Lambda.\n\nImproved system reliability and reduced incident debugging time by ~40% through centralized logging.",
 			"highlights": [
-				"Serverless APIs",
-				"AWS Lambda",
-				"Centralized logging",
+				"Serverless",
+				"Lambda",
+				"Logging",
 				"Monitoring",
-				"Performance tuning"
+				"Performance"
 			]
 		},
 		{
@@ -101,13 +101,7 @@
 			"startDate": "2024-03-01",
 			"endDate": "2024-09-01",
 			"summary": "Developed admin and client-facing Angular apps integrated with CMS and backend services.\n\nImproved SEO and performance, increasing page load speed by ~30%.",
-			"highlights": [
-				"Angular apps",
-				"SEO improvements",
-				"Performance gains",
-				"CMS integration",
-				"Code refactor"
-			]
+			"highlights": ["Angular", "SEO", "Performance", "CMS", "Refactor"]
 		},
 		{
 			"name": "Private School Management System",
@@ -116,13 +110,7 @@
 			"startDate": "2023-03-01",
 			"endDate": "2024-01-01",
 			"summary": "Modernized a legacy Angular + Rails system and improved development workflows.\n\nReduced deployment costs by 50% and stabilized releases through CI/CD.",
-			"highlights": [
-				"Angular upgrade",
-				"CI/CD pipeline",
-				"800+ tests fixed",
-				"Cost reduction",
-				"Stability improvements"
-			]
+			"highlights": ["Angular", "CI/CD", "Testing", "Cost", "Stability"]
 		},
 		{
 			"name": "Reverse Vending Machine Mobile App",
@@ -131,13 +119,7 @@
 			"startDate": "2021-01-01",
 			"endDate": "2023-03-01",
 			"summary": "Rebuilt a mobile app using Ionic and Angular, improving performance and backend efficiency.\n\nReduced server costs by ~30% and improved user retention.",
-			"highlights": [
-				"Mobile rebuild",
-				"Ionic + Angular",
-				"API optimization",
-				"Cost reduction",
-				"UX improvements"
-			]
+			"highlights": ["Mobile", "Ionic", "API", "Cost", "UX"]
 		},
 		{
 			"name": "Freelance Projects",
@@ -146,12 +128,7 @@
 			"startDate": "2018-01-01",
 			"endDate": "2020-12-01",
 			"summary": "Delivered custom web applications for clients across LATAM, including event systems, remittance platforms, and HR tools.\n\nConsistently delivered complete solutions from idea to production.",
-			"highlights": [
-				"Custom apps",
-				"API integrations",
-				"Auth systems",
-				"End-to-end delivery"
-			]
+			"highlights": ["Custom apps", "APIs", "Auth", "Delivery"]
 		}
 	],
 	"education": [
@@ -168,24 +145,36 @@
 	],
 	"skills": [
 		{
-			"name": "AI Automation & Workflows",
-			"level": "Advanced",
-			"keywords": ["n8n", "OpenAI", "Claude", "AI Agents"]
+			"name": "Frontend",
+			"keywords": [
+				"React",
+				"Next.js",
+				"TypeScript",
+				"Tailwind",
+				"Design Systems"
+			]
 		},
 		{
-			"name": "Full-Stack Development",
-			"level": "Expert",
-			"keywords": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+			"name": "Backend",
+			"keywords": [
+				"Node.js",
+				"Express",
+				"REST APIs",
+				"PostgreSQL",
+				"Supabase"
+			]
 		},
 		{
-			"name": "Backend & APIs",
-			"level": "Expert",
-			"keywords": ["Node.js", "Express", "PostgreSQL", "REST APIs"]
+			"name": "AI & Automation",
+			"keywords": ["AI", "LLMs", "OpenAI", "n8n", "Automation"]
 		},
 		{
-			"name": "Cloud & Deployment",
-			"level": "Advanced",
-			"keywords": ["Vercel", "AWS", "Docker", "Supabase"]
+			"name": "Cloud & Infra",
+			"keywords": ["AWS", "Docker", "Vercel", "WebSockets"]
+		},
+		{
+			"name": "Architecture",
+			"keywords": ["System Design", "Architecture"]
 		}
 	],
 	"languages": [
@@ -195,7 +184,7 @@
 		},
 		{
 			"language": "English",
-			"fluency": "Advanced"
+			"fluency": "C2 - Proficient"
 		}
 	],
 	"projects": [

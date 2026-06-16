@@ -1,57 +1,24 @@
 ---
 import Section from '../Section.astro'
 import { skills } from '@cv'
-
-const personalSkills = skills.filter((skill) =>
-	skill.keywords.includes('personal')
-)
-const professionalSkills = skills.filter(
-	(skill) => !skill.keywords.includes('personal')
-)
 ---
 
 <Section title="Skills">
-	<h3>Personal</h3>
-	<ul>
+	<div>
 		{
-			personalSkills.map(({ name }) => {
-				return (
-					<li>
-						<span>{name}</span>
-					</li>
-				)
+			skills.map(({ keywords }) => {
+				return keywords.map((k) => <span class="tag">{k}</span>)
 			})
 		}
-	</ul>
-	<h3>Professional</h3>
-	<ul>
-		{
-			professionalSkills.map(({ name }) => {
-				return (
-					<li>
-						<span>{name}</span>
-					</li>
-				)
-			})
-		}
-	</ul>
+	</div>
 </Section>
 
 <style>
-	h3 {
-		font-size: 1.4rem;
-		font-weight: 700;
-		margin: 16px 0;
-	}
-
-	ul {
-		list-style: disc;
-		list-style-position: inside;
-	}
-
-	li {
-		font-size: 0.8rem;
-		font-weight: 500;
-		padding: 0.2rem 0.6rem;
-	}
+	div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    --color-tag-color: var(--color-deep-sea-50);
+    --color-tag-backround: var(--color-deep-sea-500);
+  }
 </style>

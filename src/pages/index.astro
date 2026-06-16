@@ -18,17 +18,13 @@ const { name, label } = basics
 <Layout title={`Portfolio of: ${name} - ${label}`}>
 	<main>
 		<article>
-			<Hero />
+      <Hero />
+      <About />
 			<Experience />
+      <Education />
+      <Skills />
+      <Languages />
 		</article>
-		<aside>
-			<Contacts />
-			<About />
-			<Skills />
-			<Languages />
-			<Education />
-			<FollowMe />
-		</aside>
 	</main>
 	<KeyboardManager />
 </Layout>
@@ -44,12 +40,6 @@ const { name, label } = basics
 	}
 
 	article {
-		width: 70dvw;
-	}
-
-	aside {
-		width: 30dvw;
-		border-left: solid 4px var(--color-custom-blue-300);
-		padding-left: 16px;
+		width: 100dvw;
 	}
 </style>

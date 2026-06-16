@@ -1,8 +1,10 @@
 ---
 import { basics } from '@cv'
 import Section from '@/components/Section.astro'
+import Contacts from '@/components/sections/Contacts.astro'
+import WorldMap from '@/icons/WorldMap.astro'
 
-const { name, label } = basics
+const { name, label, image, location } = basics
 ---
 
 <Section>
@@ -10,8 +12,18 @@ const { name, label } = basics
 		<div class="bar"></div>
 		<div class="info">
 			<h1>{name}</h1>
-			<h2>{label}</h2>
+			<h3>{label}</h3>
+      <div class="location">
+        <WorldMap/> 
+        {location.city && <span>{location.city},</span>}
+        {location.region && <span>{location.region},</span>}
+        {location.countryCode && <span>{location.countryCode}</span>}
+      </div>
+      <Contacts/>
 		</div>
+    <div class="avatar">
+      <img src={image} alt="Profile picture" />
+    </div>
 	</div>
 </Section>
 
@@ -25,31 +37,27 @@ const { name, label } = basics
 	}
 
 	.bar {
-		width: 44px;
+		width: 4px;
 		height: var(--hero-card-height);
-		background: var(--color-custom-red-600);
+		background: var(--color-custom-blue-300);
 		border-radius: 2px;
 	}
 
 	.info {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
+    align-items: flex-start;
+    justify-content: center;
+		gap: 16px;
 		padding-right: 32px;
+    margin-right: auto;
 	}
 
-	h1 {
-		font-size: 2rem;
-		color: var(--color-custom-blue-700);
-		font-weight: bold;
-	}
-
-	h2 {
-		color: var(--color-custom-blue-700);
-		font-weight: 500;
-		font-size: 1.1rem;
-		text-wrap: balance;
-	}
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
 	img {
 		aspect-ratio: 1 / 1;
@@ -59,7 +67,6 @@ const { name, label } = basics
 	}
 
 	span {
-		color: #666;
 		display: flex;
 		align-items: center;
 		gap: 0.25rem;
