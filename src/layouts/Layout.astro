@@ -94,7 +94,16 @@ const { image, summary, url } = basics
 		--color-custom-red-600: #c1121f;
 		--color-custom-red-800: #780000;
 
+    /* Palette Deep Sea https://coolors.co/palette/0d1b2a-1b263b-415a77-778da9-e0e1dd */
+    --color-deep-sea-50: #e0e1dd;
+    --color-deep-sea-300: #778da9;
+    --color-deep-sea-500: #415a77;
+    --color-deep-sea-700: #1b263b;
+    --color-deep-sea-900: #0d1b2a;
+
 		--hero-card-height: 164px;
+    --color-tag-color: var(--color-deep-sea-500);
+    --color-tag-backround: var(--color-deep-sea-50);
 	}
 
 	html {
@@ -106,6 +115,7 @@ const { image, summary, url } = basics
 			Courier,
 			monospace;
 		background: #fff;
+    color: var(--color-deep-sea-500);
 		letter-spacing: -0.025rem;
 	}
 
@@ -148,15 +158,43 @@ const { image, summary, url } = basics
 			'Open Sans',
 			'Helvetica Neue',
 			sans-serif;
+		color: var(--color-deep-sea-900);
 	}
 
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    text-wrap: balance;
+  }
+  
 	p {
-		color: #666;
+		color: var(--color-deep-sea-500);
 		font-size: 0.9rem;
 		line-height: 1.5;
 		margin: 0;
 		text-wrap: pretty;
 	}
+
+  .tag{
+    max-width: fit-content;
+    display: inline-block;
+    color: var(--color-tag-color);
+    background-color: var(--color-tag-backround);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 4px;
+  }
 
 	.print {
 		display: none !important;
