@@ -144,7 +144,9 @@ const { image, summary, url } = basics
 	h1,
 	h2,
 	h3,
-	h4 {
+	h4,
+	h5,
+	h6 {
 		margin: 0;
 		font-family:
 			system-ui,
@@ -163,18 +165,35 @@ const { image, summary, url } = basics
 
   h1 {
     font-size: 2.5rem;
-    font-weight: bold;
+    text-wrap: balance;
+    font-weight: 900;
   }
 
   h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.75rem;
     text-wrap: balance;
+    font-weight: 700;
   }
 
   h3 {
+    font-size: 1.5rem;
+    text-wrap: balance;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 1.25rem;
+    text-wrap: balance;
+    font-weight: 500;
+  }
+  h5 {
     font-size: 1.1rem;
     text-wrap: balance;
+    font-weight: 500;
+  }
+  h6 {
+    font-size: 1rem;
+    text-wrap: balance;
+    font-weight: 500;
   }
   
 	p {
@@ -190,9 +209,9 @@ const { image, summary, url } = basics
     display: inline-block;
     color: var(--color-tag-color);
     background-color: var(--color-tag-backround);
-    font-size: 0.75rem;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+		border-radius: 9999px;
+		font-size: 0.75rem;
     margin-right: 4px;
   }
 

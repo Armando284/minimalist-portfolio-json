@@ -1,0 +1,147 @@
+---
+import Section from '../Section.astro'
+
+import { caseStudies } from '@cv'
+---
+
+<Section title="Case Studies">
+	<ul>
+		{
+			caseStudies.map((study) => {
+				return (
+					<li>
+						<article>
+							<header>
+								<div>
+									<h3>{study.title}</h3>
+									<h5>{study.client}</h5>
+                  <small>Project under NDA — representative mockups shown</small>
+								</div>
+
+								<div>
+									<time datetime={study.period}>
+										{study.period}
+									</time>
+								</div>
+							</header>
+
+							{study.image && (
+								<img 
+									src={study.image} 
+									alt={study.title}
+									class="case-image"
+								/>
+							)}
+
+							<h6>Challenge</h6>
+							<p>{study.challenge}</p>
+
+							<h6>Solution</h6>
+							<p>{study.solution}</p>
+
+							<h6>Key Results</h6>
+							<ul class="results">
+								{study.results.map((result) => (
+									<li>{result}</li>
+								))}
+							</ul>
+
+							<footer>
+								{study.technologies.length > 0 && (
+									study.technologies.map((tech) => (
+										<span class="tag">
+											{tech}
+										</span>
+									))
+								)}
+							</footer>
+						</article>
+					</li>
+				)
+			})
+		}
+	</ul>
+</Section>
+
+<style>
+	ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+  ul:not(.results) {
+    gap: 48px;
+  }
+
+	article {
+		border-bottom: 1px solid var(--color-deep-sea-800);
+		padding-bottom: 48px;
+	}
+
+	article:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 16px;
+	}
+
+  header small {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.75rem;
+    color: var(--color-deep-sea-300);
+    font-style: italic;
+  }
+
+	h6 {
+		margin: 1rem 0 0.5rem;
+	}
+
+	.case-image {
+		width: 100%;
+		max-height: 380px;
+		object-fit: contain;
+		border-radius: 8px;
+		margin: 1.25rem 0;
+		border: 1px solid var(--color-deep-sea-700);
+	}
+
+	.results {
+		padding-left: 2.25rem;
+	}
+
+	.results li {
+		margin-bottom: 0.5rem;
+		position: relative;
+    font-size: 0.8rem;
+	}
+
+	.results li::before {
+		content: "→";
+		position: absolute;
+		left: -1.25rem;
+		color: var(--color-custom-blue-700);
+	}
+
+	footer {
+		display: flex;
+		gap: 8px;
+		flex-wrap: wrap;
+		margin-top: 1.5rem;
+	}
+
+	.tag {
+    --color-tag-color: var(--color-deep-sea-50);
+    --color-tag-backround: var(--color-deep-sea-700);
+	}
+
+	time {
+		font-size: 0.9rem;
+		color: var(--color-deep-sea-400);
+	}
+</style>
