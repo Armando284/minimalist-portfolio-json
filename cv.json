@@ -18,7 +18,7 @@
 			{
 				"network": "LinkedIn",
 				"username": "armando-peña-7622bb20a",
-				"url": "https://linkedin.com/in/armando-peña-7622bb20a/"
+				"url": "https://www.linkedin.com/in/armando-p-tamayo-19a449417/"
 			},
 			{
 				"network": "GitHub",
@@ -32,6 +32,58 @@
 			}
 		]
 	},
+	"caseStudies": [
+		{
+			"title": "AI Email Automation System",
+			"client": "Operations Team - Insurance Industry",
+			"period": "Aug 2025 – Mar 2026",
+			"challenge": "The team was spending dozens of hours per week on manual email processing: extracting structured data, organizing files, tagging messages, and responding to repetitive requests. This created bottlenecks, human errors, and delayed operations.",
+			"solution": "Designed and implemented a complete AI-powered automation system using n8n workflows integrated with OpenAI. The solution automatically processes incoming emails, extracts relevant data, stores information in Supabase and SharePoint, and provides a real-time React dashboard for monitoring and exceptions.",
+			"results": [
+				"Reduced manual processing time by approximately 70%",
+				"Eliminated repetitive inbox tasks, freeing the team for high-value work",
+				"Improved data accuracy and reduced human error",
+				"Achieved fast ROI through operational efficiency gains"
+			],
+			"technologies": ["n8n", "OpenAI", "Supabase", "Node.js", "React"],
+			"image": "/case-studies/email-automation.jpg"
+		},
+		{
+			"title": "AI Document Generation System for Insurance",
+			"client": "Insurance Company",
+			"period": "Feb 2025 – Mar 2025",
+			"challenge": "Creating customized insurance documents was a highly manual process that took several hours per policy. This caused delays in client service, inconsistencies, and limited the team's capacity to handle growing volume.",
+			"solution": "Built an intelligent document generation platform that ingests client data and business rules to automatically produce accurate, personalized documents. Integrated with existing systems for seamless workflow.",
+			"results": [
+				"Reduced document creation time from hours to minutes (80% faster)",
+				"Significantly improved consistency and compliance across documents",
+				"Enabled the team to scale operations without additional headcount",
+				"Enhanced client experience through faster turnaround"
+			],
+			"technologies": ["Next.js", "Supabase", "OpenAI", "PDF Generation"],
+			"image": "/case-studies/document-generation.jpg"
+		},
+		{
+			"title": "AI + AR Virtual Tailoring Platform",
+			"client": "Fashion / E-commerce Startup",
+			"period": "Apr 2025 – Jul 2025",
+			"challenge": "Traditional body measurement and clothing try-on processes were slow, inaccurate, and created high return rates in e-commerce. The client needed a fast, engaging digital solution to improve conversion and user experience.",
+			"solution": "Developed a mobile-first web application that uses device camera input for body measurements combined with Augmented Reality for virtual try-on. Delivered a complete MVP with robust backend and smooth frontend experience.",
+			"results": [
+				"Delivered a production-ready MVP in just 4 months",
+				"Reduced time-to-market by approximately 50% compared to standard timelines",
+				"Enabled virtual try-on functionality that improves customer engagement",
+				"Positioned the client for lower return rates and higher conversions"
+			],
+			"technologies": [
+				"Next.js",
+				"AR Integration",
+				"Camera APIs",
+				"Supabase"
+			],
+			"image": "/case-studies/virtual-tailoring.jpg"
+		}
+	],
 	"work": [
 		{
 			"name": "AI Email Automation System",
