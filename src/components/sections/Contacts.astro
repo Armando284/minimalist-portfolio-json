@@ -5,12 +5,24 @@ import Phone from '@/icons/Phone.astro'
 import GitHub from '@/icons/GitHub.astro'
 import LinkedIn from '@/icons/LinkedIn.astro'
 import Medium from '@/icons/Medium.astro'
+import Briefcase from '@/icons/Briefcase.astro'
 
-const { name, email, phone, profiles } = basics
+const { name, email, phone, profiles, url } = basics
 ---
 
 <section>
 	<div class="container">
+		{
+			url && (
+				<a
+					href={url}
+					title={`Visit ${name}'s website`}
+					target="_blank"
+					rel="noopener noreferrer">
+					<Briefcase />
+				</a>
+			)
+		}
 		{
 			email && (
 				<a
