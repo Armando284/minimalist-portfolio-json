@@ -5,6 +5,7 @@ import Phone from '@/icons/Phone.astro'
 import GitHub from '@/icons/GitHub.astro'
 import LinkedIn from '@/icons/LinkedIn.astro'
 import Medium from '@/icons/Medium.astro'
+import Blog from '@/icons/Blog.astro'
 import Briefcase from '@/icons/Briefcase.astro'
 
 const { name, email, phone, profiles, url } = basics
@@ -56,6 +57,7 @@ const { name, email, phone, profiles, url } = basics
 						  {profile.network.toLowerCase() === 'github' && <GitHub />}
 						  {profile.network.toLowerCase() === 'linkedin' && <LinkedIn />}
 						  {profile.network.toLowerCase() === 'medium' && <Medium />}
+						  {profile.network.toLowerCase() === 'blog' && <Blog />}
 					</a>
 				))
 		}

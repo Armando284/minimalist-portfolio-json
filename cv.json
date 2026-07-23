@@ -25,12 +25,17 @@
 				"username": "Armando284",
 				"url": "https://github.com/Armando284"
 			},
-			{
-				"network": "Medium",
-				"username": "armanp",
-				"url": "https://medium.com/@armanp"
-			}
-		]
+		{
+			"network": "Medium",
+			"username": "armanp",
+			"url": "https://medium.com/@armanp"
+		},
+		{
+			"network": "Blog",
+			"username": "tallerweb-cu",
+			"url": "https://tallerweb-cu.vercel.app"
+		}
+	]
 	},
 	"work": [
 		{
@@ -239,6 +244,19 @@
 			],
 			"url": "https://life-simulation-self.vercel.app/",
 			"github": "https://github.com/Armando284/life-simulation"
+		},
+		{
+			"name": "Taller Web CU",
+			"description": "Personal page and blog for Cuban market freelance web development services.",
+			"highlights": [
+				"Blog",
+				"Freelance",
+				"Cuban Market",
+				"Web Development",
+				"Personal Brand"
+			],
+			"url": "https://tallerweb-cu.vercel.app",
+			"github": ""
 		}
 	],
 	"certificates": [],
