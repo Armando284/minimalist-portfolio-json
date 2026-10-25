@@ -39,7 +39,7 @@
 	},
 	"work": [
 		{
-			"name": "AI Email Automation System",
+			"name": "CBS Cleaning",
 			"position": "Senior Full-Stack Developer",
 			"url": "",
 			"startDate": "2025-08-01",
@@ -55,7 +55,7 @@
 			]
 		},
 		{
-			"name": "AI + AR Virtual Tailoring Platform",
+			"name": "SuitUp Project",
 			"position": "Senior Full-Stack Developer",
 			"url": "",
 			"startDate": "2025-04-01",
@@ -70,7 +70,7 @@
 			]
 		},
 		{
-			"name": "AI Document Generation System (Insurance)",
+			"name": "AmerAdjust",
 			"position": "Senior Full-Stack Developer",
 			"url": "",
 			"startDate": "2025-01-31",
@@ -100,7 +100,7 @@
 			]
 		},
 		{
-			"name": "Tourism Platform",
+			"name": "Explora Jalisco",
 			"position": "Full-Stack Developer",
 			"url": "",
 			"startDate": "2024-03-01",
@@ -109,7 +109,7 @@
 			"highlights": ["Angular", "SEO", "Performance", "CMS", "Refactor"]
 		},
 		{
-			"name": "Private School Management System",
+			"name": "Wassermeloni",
 			"position": "Frontend Developer",
 			"url": "",
 			"startDate": "2023-03-01",
@@ -118,7 +118,7 @@
 			"highlights": ["Angular", "CI/CD", "Testing", "Cost", "Stability"]
 		},
 		{
-			"name": "Reverse Vending Machine Mobile App",
+			"name": "Imagined Earth",
 			"position": "Frontend / Mobile Developer",
 			"url": "",
 			"startDate": "2021-01-01",
