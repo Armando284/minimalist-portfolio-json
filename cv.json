@@ -1,12 +1,12 @@
 {
 	"basics": {
 		"name": "Armando Peña Tamayo",
-		"label": "Senior Full-Stack Engineer | AI Engineering & SaaS Architecture",
+		"label": "Senior Full-Stack AI Engineer | SaaS Architecture | LLMs & RAG",
 		"image": "/me.webp",
 		"email": "arman2p284@gmail.com",
 		"phone": "+53 51705953",
 		"url": "https://armando-swe-portfolio.vercel.app",
-		"summary": "Senior full-stack engineer with 8 years of experience taking software from architecture and data modeling through implementation, integration, and deployment. I build AI-powered SaaS and automation systems—multi-tenant platforms, LLM/RAG pipelines, agent orchestration with n8n, and secure APIs—primarily with TypeScript, Node.js, React/Next.js, PostgreSQL, and Supabase. I have delivered remotely with international teams and bring a growing application-security specialization to every engagement.",
+		"summary": "Senior full-stack AI engineer with 8 years of experience designing and delivering production software end to end, from architecture and data modeling to implementation, integration, and deployment. I build multi-tenant SaaS and production-oriented AI systems: LLM integrations, RAG and vector databases, multi-stage agent orchestration, custom tools, and deterministic validation around probabilistic outputs. I work remotely with international engineering teams and treat reliability, security, and concurrency as core architectural concerns.",
 		"location": {
 			"address": "",
 			"postalCode": "82300",
@@ -44,15 +44,17 @@
 			"url": "",
 			"startDate": "2025-08-01",
 			"endDate": "2026-03-30",
-			"summary": "AI-driven email operations platform for a document-heavy back office. Designed deterministic ETL and normalization ahead of LLM processing, multi-format document extraction (including text from image-based attachments), RAG-style vector retrieval over supporting documents, and tool-enabled n8n AI Agents with Structured Outputs and downstream validation agents. Processed hundreds of emails per day—thousands during rollout—cutting manual processing time by ~70%.",
+			"summary": "Production-oriented AI automation platform for a document-heavy email back office. Built a hybrid deterministic/LLM pipeline: deterministic ETL and normalization, multi-format document extraction (including image-based text), Qdrant-backed RAG over indexed email documents and attachments, and multi-stage n8n agent orchestration with Structured Outputs and tool calling. Agents retrieved geographic and tax information through custom tools, selected OpenAI models by task complexity (GPT-4.5 and smaller models), and shared temporary per-email workflow state through Redis. Deterministic validators using the same APIs cross-checked low-confidence results. Added retry/recovery paths, concurrency controls, and duplicate/conflict prevention for SharePoint writes while processing hundreds of emails daily—thousands during initial rollout—cutting manual processing time by ~70%.",
 			"highlights": [
+				"Qdrant",
+				"RAG",
+				"Redis",
 				"n8n",
-				"Deterministic ETL",
-				"RAG / Vector Search",
-				"AI Agents",
+				"AI Agent Orchestration",
+				"Tool/Function Calling",
 				"Structured Outputs",
-				"Document Processing",
-				"Supabase",
+				"Hybrid ETL + LLM",
+				"Concurrency Control",
 				"SharePoint",
 				"~70% Faster"
 			]
@@ -79,12 +81,14 @@
 			"url": "",
 			"startDate": "2025-01-31",
 			"endDate": "2025-03-30",
-			"summary": "AI document-generation platform for the insurance industry, built from the MVP stage. Designed the multi-tenant foundation from the outset: organization tenant IDs, Supabase Row Level Security, tenant-scoped RBAC, and authorization checks for cross-tenant isolation. Implemented the Next.js/Supabase product and AI document pipeline, reducing document creation time from hours to minutes (~80%).",
+			"summary": "AI document-generation platform for the insurance industry, built from the MVP stage. Designed and implemented multi-tenancy from scratch: organization tenant IDs on business records, Supabase RLS enabled by default for new business-data tables through migrations, tenant-scoped hierarchical RBAC, and defense-in-depth authorization across database RLS and application middleware. Tenant administrators can access all users within their own organization; global administrators can operate across tenants; ordinary users and organizations remain isolated. Also built the Next.js/Supabase product and AI document pipeline, reducing document creation from hours to minutes (~80%). Implemented at MVP stage; multi-organization behavior was not yet validated in production.",
 			"highlights": [
-				"Multi-tenant Architecture",
+				"Multi-tenant SaaS",
 				"Supabase RLS",
-				"Tenant-scoped RBAC",
-				"Data Isolation",
+				"Hierarchical RBAC",
+				"Defense-in-depth Auth",
+				"Tenant Isolation",
+				"Database-level Access Control",
 				"AI Document Generation",
 				"Next.js",
 				"Supabase",
@@ -220,10 +224,10 @@
 				"PostgreSQL",
 				"Supabase",
 				"Supabase RLS",
-				"Multi-tenant Architecture",
-				"SaaS Architecture",
-				"Tenant-scoped RBAC",
-				"Vector Databases",
+				"Multi-tenant SaaS",
+				"Tenant Isolation",
+				"Hierarchical RBAC",
+				"Database-level Access Control",
 				"Data Modeling",
 				"ETL Pipelines",
 				"System Design"
@@ -235,8 +239,11 @@
 				"OpenAI",
 				"LLM Integration",
 				"RAG",
-				"Vector Retrieval",
+				"Qdrant",
+				"AI Agents",
+				"Tool/Function Calling",
 				"Structured Outputs",
+				"Vector Retrieval",
 				"Document Processing",
 				"Image-based Text Extraction"
 			]
@@ -245,10 +252,19 @@
 			"name": "Automation & Agent Orchestration",
 			"keywords": [
 				"n8n",
-				"AI Agent Orchestration",
+				"Agent Orchestration",
 				"Multi-stage Workflows",
-				"Tool Integration",
+				"Hybrid Deterministic/LLM Processing",
 				"Workflow Automation"
+			]
+		},
+		{
+			"name": "Infrastructure & Reliability",
+			"keywords": [
+				"Redis",
+				"Concurrency Control",
+				"Fault Tolerance",
+				"Retry & Recovery"
 			]
 		},
 		{
@@ -268,6 +284,9 @@
 				"Automated Testing",
 				"Application Security",
 				"OWASP",
+				"Burp Suite Community",
+				"OWASP ZAP",
+				"Active Security Scanning",
 				"Security-focused Testing",
 				"Secure Data Isolation"
 			]
@@ -286,28 +305,28 @@
 	"projects": [
 		{
 			"name": "AI Job Hunter — Personal Agent System",
-			"description": "Personal agent system that discovers and normalizes job listings, evaluates eligibility with custom tools and deterministic rules (location restrictions, payment compatibility, role classification), and generates tailored CVs and cover letters. Combines multi-stage orchestration, structured LLM output, and rule-based checks over live web data.",
+			"description": "Independent personal project. Autonomous agents research the web to discover and extract job opportunities, normalize listings, and evaluate eligibility with custom tools plus deterministic rules for geographic restrictions, payment-method compatibility, role type, and technical requirements. Multi-stage orchestration combines structured job processing and LLM reasoning with rule-based validation, then adapts the CV and generates a tailored cover letter for each position.",
 			"highlights": [
-				"AI Agents",
-				"Multi-stage Orchestration",
-				"Custom Tools",
-				"Structured Outputs",
+				"Autonomous Agents",
 				"Web Research",
-				"CV Tailoring"
+				"Custom Tools",
+				"Deterministic Eligibility Rules",
+				"Structured Outputs",
+				"Tailored CV & Cover Letter"
 			],
 			"url": "",
 			"github": ""
 		},
 		{
 			"name": "AI Security Testing Agents — Personal Project",
-			"description": "Personal agent-based security testing toolkit that checks web applications against OWASP guidelines and vulnerability checklists to surface issues during development. Complements manual review and professional penetration testing.",
+			"description": "Personal AI-assisted application security testing toolkit. Orchestrates agents to run active scans with Burp Suite Community Edition and OWASP ZAP, apply OWASP-guided checks and vulnerability checklists, and surface findings for review during development. Complements manual validation and professional penetration testing; it does not certify security or guarantee vulnerability detection.",
 			"highlights": [
 				"AI Agents",
-				"Application Security",
+				"Burp Suite Community",
+				"OWASP ZAP",
+				"Active Security Scanning",
 				"OWASP",
-				"Security Testing",
-				"Vulnerability Checklists",
-				"Automation"
+				"Application Security"
 			],
 			"url": "",
 			"github": ""
