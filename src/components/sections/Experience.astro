@@ -93,8 +93,18 @@ import { work } from '@cv'
 
 	footer {
 		display: flex;
-		gap: 8px;
+		flex-wrap: wrap;
+		gap: 6px 8px;
 	}
+
+	footer .tag {
+		max-width: 100%;
+		line-height: 1.35;
+		overflow-wrap: anywhere;
+		word-break: break-word;
+		white-space: normal;
+	}
+
 	article footer h4 {
 		font-weight: 600;
 	}
