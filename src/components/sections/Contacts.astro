@@ -9,6 +9,9 @@ import Blog from '@/icons/Blog.astro'
 import Briefcase from '@/icons/Briefcase.astro'
 
 const { name, email, phone, profiles, url } = basics
+
+const cleanUrl = (value: string) =>
+	value.replace(/^https?:\/\//, '').replace(/\/$/, '')
 ---
 
 <section>
@@ -63,6 +66,17 @@ const { name, email, phone, profiles, url } = basics
 		}
 	</div>
 
+	<div class="print-contact">
+		{email && <span><strong>Email</strong> {email}</span>}
+		{phone && <span><strong>Phone</strong> {phone}</span>}
+		{url && <span><strong>Website</strong> {cleanUrl(url)}</span>}
+		{profiles.map((profile) =>
+			profile.url ? (
+				<span><strong>{profile.network}</strong> {cleanUrl(profile.url)}</span>
+			) : null
+		)}
+	</div>
+
 	<style>
 		.container {
 			width: 100%;
@@ -97,11 +111,34 @@ const { name, email, phone, profiles, url } = basics
 			}
 		}
 
+		.print-contact {
+			display: none;
+		}
+
 		@media print {
 			.container {
-				-webkit-print-color-adjust: exact; /* Chrome/Safari */
-				print-color-adjust: exact; /* Estándar */
-				color-adjust: exact; /* Firefox */
+				display: none !important;
+			}
+
+			.print-contact {
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				column-gap: 5mm;
+				row-gap: 1mm;
+				color: var(--color-deep-sea-500);
+				font-size: 7.5pt;
+				line-height: 1.35;
+				letter-spacing: 0;
+			}
+
+			.print-contact span {
+				overflow-wrap: anywhere;
+			}
+
+			.print-contact strong {
+				color: var(--color-deep-sea-700);
+				font-weight: 700;
 			}
 		}
 	</style>

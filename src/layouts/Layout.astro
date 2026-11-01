@@ -7,17 +7,21 @@ interface Props {
 
 const { title } = Astro.props
 
-const { image, summary, url } = basics
+const { name, image, summary, url } = basics
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<title>{title}</title>
 		<meta
 			name="description"
 			content={summary}
+		/>
+		<meta
+			name="author"
+			content={name}
 		/>
 		<meta
 			name="viewport"
@@ -82,6 +86,38 @@ const { image, summary, url } = basics
 	</head>
 	<body>
 		<slot />
+		<script is:inline>
+			(() => {
+				const removePrintLinks = () => {
+					document.querySelectorAll('a[href]').forEach((link) => {
+						link.dataset.printHref = link.getAttribute('href') ?? '';
+						link.dataset.printTarget = link.getAttribute('target') ?? '';
+						link.dataset.printRel = link.getAttribute('rel') ?? '';
+						link.removeAttribute('href');
+						link.removeAttribute('target');
+						link.removeAttribute('rel');
+					});
+				};
+
+				const restorePrintLinks = () => {
+					document.querySelectorAll('a[data-print-href]').forEach((link) => {
+						link.setAttribute('href', link.dataset.printHref ?? '');
+						if (link.dataset.printTarget) {
+							link.setAttribute('target', link.dataset.printTarget);
+						}
+						if (link.dataset.printRel) {
+							link.setAttribute('rel', link.dataset.printRel);
+						}
+						delete link.dataset.printHref;
+						delete link.dataset.printTarget;
+						delete link.dataset.printRel;
+					});
+				};
+
+				window.addEventListener('beforeprint', removePrintLinks);
+				window.addEventListener('afterprint', restorePrintLinks);
+			})();
+		</script>
 	</body>
 </html>
 
@@ -220,7 +256,43 @@ const { image, summary, url } = basics
 	}
 
 	@media print {
-		.no-print {
+		@page {
+			size: A4 portrait;
+			margin: 12mm 14mm 14mm;
+		}
+
+		html {
+			font-size: 9.5pt;
+			letter-spacing: 0;
+			color: var(--color-deep-sea-700);
+			background: #fff;
+			-webkit-print-color-adjust: exact;
+			print-color-adjust: exact;
+			color-adjust: exact;
+		}
+
+		body {
+			background: #fff;
+		}
+
+		*,
+		*::before,
+		*::after {
+			-webkit-print-color-adjust: exact !important;
+			print-color-adjust: exact !important;
+			color-adjust: exact !important;
+			animation: none !important;
+			transition: none !important;
+			box-shadow: none !important;
+			text-shadow: none !important;
+		}
+
+		.no-print,
+		#normal-footer,
+		#footer-button,
+		#hotkeypad,
+		astro-dev-toolbar,
+		script {
 			display: none !important;
 		}
 
@@ -228,12 +300,83 @@ const { image, summary, url } = basics
 			display: block !important;
 		}
 
-		astro-dev-toolbar {
+		a,
+		a:visited {
+			color: inherit !important;
+			text-decoration: none !important;
+		}
+
+		[data-title]::after {
 			display: none !important;
 		}
 
-		article {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			break-after: avoid;
+			page-break-after: avoid;
+		}
+
+		h1 {
+			font-size: 22pt;
+			line-height: 1.1;
+		}
+
+		h2 {
+			font-size: 13pt;
+			line-height: 1.25;
+		}
+
+		h3 {
+			font-size: 11pt;
+			line-height: 1.25;
+		}
+
+		h5 {
+			font-size: 9pt;
+			line-height: 1.3;
+		}
+
+		p {
+			font-size: 8.75pt;
+			line-height: 1.4;
+			orphans: 3;
+			widows: 3;
 			break-inside: avoid;
+			page-break-inside: avoid;
+		}
+
+		ul {
+			break-inside: auto;
+		}
+
+		li,
+		li > article {
+			break-inside: avoid;
+			page-break-inside: avoid;
+		}
+
+		.tag {
+			max-width: 100%;
+			margin: 0 !important;
+			padding: 1pt 4pt !important;
+			border: 0.4pt solid #c9d3de !important;
+			border-radius: 2pt !important;
+			background-color: #edf1f5 !important;
+			color: var(--color-deep-sea-700) !important;
+			font-size: 6.75pt !important;
+			line-height: 1.25 !important;
+			white-space: normal;
+			overflow-wrap: anywhere;
+			break-inside: avoid;
+			page-break-inside: avoid;
+		}
+
+		img {
+			max-width: 100%;
 		}
 	}
 </style>

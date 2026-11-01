@@ -75,10 +75,47 @@ const { name, label, image, location } = basics
 	}
 
 	@media print {
+		.container {
+			align-items: flex-start;
+			gap: 6mm;
+		}
+
 		.bar {
-			-webkit-print-color-adjust: exact; /* Chrome/Safari */
-			print-color-adjust: exact; /* Estándar */
-			color-adjust: exact; /* Firefox */
+			align-self: stretch;
+			height: auto;
+			min-height: 38mm;
+		}
+
+		.info {
+			gap: 3mm;
+			padding-right: 0;
+		}
+
+		h1 {
+			font-size: 22pt;
+		}
+
+		h3 {
+			font-size: 11pt;
+		}
+
+		.location {
+			font-size: 8pt;
+			gap: 2mm;
+		}
+
+		.location svg {
+			display: none !important;
+		}
+
+		img {
+			width: 24mm;
+			border-radius: 3mm;
+		}
+
+		span {
+			font-size: 8pt;
+			letter-spacing: 0;
 		}
 	}
 </style>

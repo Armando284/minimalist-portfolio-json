@@ -36,11 +36,23 @@ const { title } = Astro.props
     margin-bottom: 16px;
   }
 
-  @media print{
+  @media print {
+    section {
+      max-width: none;
+      margin: 0 0 6mm;
+    }
+
+    h2 {
+      margin-bottom: 1.5mm;
+      font-size: 13pt;
+      line-height: 1.25;
+    }
+
     hr {
-    -webkit-print-color-adjust: exact; /* Chrome/Safari */
-    print-color-adjust: exact; /* Estándar */
-    color-adjust: exact; /* Firefox */
-  }
+      width: 12mm;
+      height: 2pt;
+      margin-bottom: 3mm;
+      break-after: avoid;
+    }
   }
 </style>

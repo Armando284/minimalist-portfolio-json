@@ -1,7 +1,6 @@
 ---
 import { languages } from '@cv'
 import Section from '@/components/Section.astro'
-import Mail from '@/icons/Mail.astro'
 ---
 
 <Section title="Languages">
@@ -23,6 +22,13 @@ import Mail from '@/icons/Mail.astro'
 			align-items: start;
 			gap: 16px;
 			font-size: 0.8rem;
+		}
+
+		@media print {
+			.container {
+				gap: 3mm;
+				font-size: 8pt;
+			}
 		}
 	</style>
 </Section>

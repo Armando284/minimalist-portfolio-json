@@ -3,6 +3,9 @@ import GitHub from '@/icons/GitHub.astro'
 import Section from '../Section.astro'
 
 import { projects } from '@cv'
+
+const cleanUrl = (value: string) =>
+	value.replace(/^https?:\/\//, '').replace(/\/$/, '')
 ---
 
 <Section title="Projects">
@@ -10,6 +13,8 @@ import { projects } from '@cv'
 		{
 			projects.map(
 				({ url, description, highlights, name, github }) => {
+					const link = url || github
+
 					return (
 						<li>
 							<article>
@@ -32,6 +37,9 @@ import { projects } from '@cv'
 										)}
 									</h3>
 									<p>{description}</p>
+									{link && (
+										<span class="project-url">{cleanUrl(link)}</span>
+									)}
 								</header>
 								<footer>
 									{highlights.map((highlight) => {
@@ -87,6 +95,10 @@ import { projects } from '@cv'
 		margin-bottom: 4px;
 	}
 
+	.project-url {
+		display: none;
+	}
+
 	article h3 span {
 		color: rgb(0, 188, 47);
 		animation-name: flicker;
@@ -126,8 +138,45 @@ import { projects } from '@cv'
 	}
 
 	@media print {
-		article h3 span {
-			animation-name: none;
+		ul {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 3mm;
+			margin-inline: 0;
+		}
+
+		article {
+			padding: 3mm;
+			border: 0.5pt solid #d5dbe3;
+			break-inside: avoid;
+		}
+
+		article h3 {
+			margin-bottom: 1mm;
+		}
+
+		article p {
+			font-size: 7.5pt;
+			line-height: 1.35;
+			margin-bottom: 0;
+		}
+
+		.project-url {
+			display: block;
+			margin-top: 1.5mm;
+			color: var(--color-deep-sea-500);
+			font-size: 6.5pt;
+			line-height: 1.3;
+			overflow-wrap: anywhere;
+		}
+
+		.github-code-link {
+			display: none !important;
+		}
+
+		footer {
+			gap: 1.5pt;
+			margin-top: 2mm;
+			font-size: 6.5pt;
 		}
 	}
 </style>
