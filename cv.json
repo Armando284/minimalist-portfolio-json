@@ -1,23 +1,23 @@
 {
 	"basics": {
 		"name": "Armando Peña Tamayo",
-		"label": "Full-Stack Engineer | AI Automation & MVP Development",
+		"label": "Senior Full-Stack Engineer | AI Engineering & SaaS Architecture",
 		"image": "/me.webp",
 		"email": "arman2p284@gmail.com",
 		"phone": "+53 51705953",
 		"url": "https://armando-swe-portfolio.vercel.app",
-		"summary": "Full‑stack engineer with 8 years of experience building AI‑powered tools, internal dashboards, and fast MVPs for startups using Next.js, Supabase, Node.js, and automated workflows like n8n and OpenAI. I focus on replacing manual operations with automation to reduce costs, improve efficiency, and deliver measurable business impact.",
+		"summary": "Senior full-stack engineer with 8 years of experience taking software from architecture and data modeling through implementation, integration, and deployment. I build AI-powered SaaS and automation systems—multi-tenant platforms, LLM/RAG pipelines, agent orchestration with n8n, and secure APIs—primarily with TypeScript, Node.js, React/Next.js, PostgreSQL, and Supabase. I have delivered remotely with international teams and bring a growing application-security specialization to every engagement.",
 		"location": {
 			"address": "",
 			"postalCode": "82300",
 			"city": "Banes",
 			"countryCode": "CU",
-			"region": "LATAM"
+			"region": "Holguín"
 		},
 		"profiles": [
 			{
 				"network": "LinkedIn",
-				"username": "armando-peña-7622bb20a",
+				"username": "armando-p-tamayo-19a449417",
 				"url": "https://www.linkedin.com/in/armando-p-tamayo-19a449417/"
 			},
 			{
@@ -25,17 +25,17 @@
 				"username": "Armando284",
 				"url": "https://github.com/Armando284"
 			},
-		{
-			"network": "Medium",
-			"username": "armanp",
-			"url": "https://medium.com/@armanp"
-		},
-		{
-			"network": "Blog",
-			"username": "tallerweb-cu",
-			"url": "https://tallerweb-cu.vercel.app"
-		}
-	]
+			{
+				"network": "Medium",
+				"username": "armanp",
+				"url": "https://medium.com/@armanp"
+			},
+			{
+				"network": "Blog",
+				"username": "tallerweb-cu",
+				"url": "https://tallerweb-cu.vercel.app"
+			}
+		]
 	},
 	"work": [
 		{
@@ -44,14 +44,17 @@
 			"url": "",
 			"startDate": "2025-08-01",
 			"endDate": "2026-03-30",
-			"summary": "Replaced a manual email workflow with an AI automation system using n8n and OpenAI. Automatically processes emails, extracts structured data, organizes files, and tags messages.\n\nEstimated impact: reduced manual processing time by ~70% and eliminated repetitive inbox operations.",
+			"summary": "AI-driven email operations platform for a document-heavy back office. Designed deterministic ETL and normalization ahead of LLM processing, multi-format document extraction (including text from image-based attachments), RAG-style vector retrieval over supporting documents, and tool-enabled n8n AI Agents with Structured Outputs and downstream validation agents. Processed hundreds of emails per day—thousands during rollout—cutting manual processing time by ~70%.",
 			"highlights": [
-				"AI processing",
 				"n8n",
-				"Extraction",
+				"Deterministic ETL",
+				"RAG / Vector Search",
+				"AI Agents",
+				"Structured Outputs",
+				"Document Processing",
 				"Supabase",
 				"SharePoint",
-				"Dashboard"
+				"~70% Faster"
 			]
 		},
 		{
@@ -60,13 +63,14 @@
 			"url": "",
 			"startDate": "2025-04-01",
 			"endDate": "2025-07-31",
-			"summary": "Built a mobile-first web app for body measurement and virtual try-on using camera input and AR.\n\nDelivered a full MVP in 4 months, reducing time-to-market by ~50% compared to typical product timelines.",
+			"summary": "Mobile-first body-measurement and virtual try-on MVP for fashion e-commerce. Owned the full-stack build: Next.js architecture, camera-based capture flow, measurement processing, and AR try-on integration. Shipped in four months, reducing time-to-market by ~50% versus typical product timelines.",
 			"highlights": [
-				"AR try-on",
-				"Camera input",
+				"Next.js",
+				"Camera Capture",
+				"AR Try-on",
+				"Mobile-first",
 				"E-commerce",
-				"Fast MVP",
-				"Next.js"
+				"~50% Faster MVP"
 			]
 		},
 		{
@@ -75,13 +79,16 @@
 			"url": "",
 			"startDate": "2025-01-31",
 			"endDate": "2025-03-30",
-			"summary": "Developed an AI system for automatic document generation in the insurance domain.\n\nReduced document creation time from hours to minutes (~80% faster) by replacing manual workflows with AI.",
+			"summary": "AI document-generation platform for the insurance industry, built from the MVP stage. Designed the multi-tenant foundation from the outset: organization tenant IDs, Supabase Row Level Security, tenant-scoped RBAC, and authorization checks for cross-tenant isolation. Implemented the Next.js/Supabase product and AI document pipeline, reducing document creation time from hours to minutes (~80%).",
 			"highlights": [
-				"AI docs",
-				"Automation",
+				"Multi-tenant Architecture",
+				"Supabase RLS",
+				"Tenant-scoped RBAC",
+				"Data Isolation",
+				"AI Document Generation",
 				"Next.js",
 				"Supabase",
-				"Security"
+				"~80% Faster"
 			]
 		},
 		{
@@ -90,13 +97,14 @@
 			"url": "",
 			"startDate": "2024-10-01",
 			"endDate": "2025-01-31",
-			"summary": "Built and maintained serverless microservices using AWS Lambda.\n\nImproved system reliability and reduced incident debugging time by ~40% through centralized logging.",
+			"summary": "Serverless microservices for an events-management SaaS on AWS Lambda. Built and maintained backend services and centralized logging/monitoring across functions, reducing incident debugging time by ~40% and improving reliability.",
 			"highlights": [
+				"AWS Lambda",
 				"Serverless",
-				"Lambda",
-				"Logging",
+				"Microservices",
+				"Centralized Logging",
 				"Monitoring",
-				"Performance"
+				"~40% Faster Debugging"
 			]
 		},
 		{
@@ -105,8 +113,14 @@
 			"url": "",
 			"startDate": "2024-03-01",
 			"endDate": "2024-09-01",
-			"summary": "Developed admin and client-facing Angular apps integrated with CMS and backend services.\n\nImproved SEO and performance, increasing page load speed by ~30%.",
-			"highlights": ["Angular", "SEO", "Performance", "CMS", "Refactor"]
+			"summary": "Admin and customer-facing Angular applications integrated with a CMS and backend services. Optimized SEO and frontend performance, improving page load speed by ~30%.",
+			"highlights": [
+				"Angular",
+				"CMS Integration",
+				"SEO",
+				"Performance Optimization",
+				"~30% Faster Load"
+			]
 		},
 		{
 			"name": "Wassermeloni",
@@ -114,8 +128,14 @@
 			"url": "",
 			"startDate": "2023-03-01",
 			"endDate": "2024-01-01",
-			"summary": "Modernized a legacy Angular + Rails system and improved development workflows.\n\nReduced deployment costs by 50% and stabilized releases through CI/CD.",
-			"highlights": ["Angular", "CI/CD", "Testing", "Cost", "Stability"]
+			"summary": "Modernized a legacy Angular and Ruby on Rails platform and its delivery workflow. Introduced CI/CD and automated testing to stabilize releases and reduce deployment costs by ~50%.",
+			"highlights": [
+				"Angular",
+				"Ruby on Rails",
+				"CI/CD",
+				"Automated Testing",
+				"~50% Lower Deploy Cost"
+			]
 		},
 		{
 			"name": "Imagined Earth",
@@ -123,8 +143,15 @@
 			"url": "",
 			"startDate": "2021-01-01",
 			"endDate": "2023-03-01",
-			"summary": "Rebuilt a mobile app using Ionic and Angular, improving performance and backend efficiency.\n\nReduced server costs by ~30% and improved user retention.",
-			"highlights": ["Mobile", "Ionic", "API", "Cost", "UX"]
+			"summary": "Rebuilt a mobile app with Ionic and Angular, improving client performance and backend/API efficiency. Reduced server costs by ~30% and improved user retention through a faster, more reliable experience.",
+			"highlights": [
+				"Ionic",
+				"Angular",
+				"Mobile",
+				"API Optimization",
+				"~30% Lower Server Cost",
+				"UX / Retention"
+			]
 		},
 		{
 			"name": "Freelance Projects",
@@ -132,8 +159,15 @@
 			"url": "",
 			"startDate": "2018-01-01",
 			"endDate": "2020-12-01",
-			"summary": "Delivered custom web applications for clients across LATAM, including event systems, remittance platforms, and HR tools.\n\nConsistently delivered complete solutions from idea to production.",
-			"highlights": ["Custom apps", "APIs", "Auth", "Delivery"]
+			"summary": "Delivered end-to-end web applications for remote clients across LATAM, including event systems, remittance platforms, and HR tools. Owned requirements, architecture, implementation, authentication, and deployment from concept to production.",
+			"highlights": [
+				"Custom Web Apps",
+				"REST APIs",
+				"Authentication",
+				"Event Systems",
+				"Remittance Platforms",
+				"HR Tools"
+			]
 		}
 	],
 	"education": [
@@ -150,36 +184,93 @@
 	],
 	"skills": [
 		{
-			"name": "Frontend",
+			"name": "Programming Languages",
+			"keywords": [
+				"TypeScript",
+				"JavaScript",
+				"SQL",
+				"Go"
+			]
+		},
+		{
+			"name": "Frontend Engineering",
 			"keywords": [
 				"React",
 				"Next.js",
-				"TypeScript",
-				"Tailwind",
+				"Angular",
+				"Ionic",
+				"Tailwind CSS",
 				"Design Systems"
 			]
 		},
 		{
-			"name": "Backend",
+			"name": "Backend Engineering",
 			"keywords": [
 				"Node.js",
 				"Express",
 				"REST APIs",
-				"PostgreSQL",
-				"Supabase"
+				"WebSockets",
+				"Third-party Integrations",
+				"Serverless Microservices"
 			]
 		},
 		{
-			"name": "AI & Automation",
-			"keywords": ["AI", "LLMs", "OpenAI", "n8n", "Automation"]
+			"name": "Databases & SaaS Architecture",
+			"keywords": [
+				"PostgreSQL",
+				"Supabase",
+				"Supabase RLS",
+				"Multi-tenant Architecture",
+				"SaaS Architecture",
+				"Tenant-scoped RBAC",
+				"Vector Databases",
+				"Data Modeling",
+				"ETL Pipelines",
+				"System Design"
+			]
 		},
 		{
-			"name": "Cloud & Infra",
-			"keywords": ["AWS", "Docker", "Vercel", "WebSockets"]
+			"name": "AI Engineering & LLMs",
+			"keywords": [
+				"OpenAI",
+				"LLM Integration",
+				"RAG",
+				"Vector Retrieval",
+				"Structured Outputs",
+				"Document Processing",
+				"Image-based Text Extraction"
+			]
 		},
 		{
-			"name": "Architecture",
-			"keywords": ["System Design", "Architecture"]
+			"name": "Automation & Agent Orchestration",
+			"keywords": [
+				"n8n",
+				"AI Agent Orchestration",
+				"Multi-stage Workflows",
+				"Tool Integration",
+				"Workflow Automation"
+			]
+		},
+		{
+			"name": "Cloud & DevOps",
+			"keywords": [
+				"AWS",
+				"AWS Lambda",
+				"Docker",
+				"Vercel",
+				"CI/CD",
+				"Deployment Automation"
+			]
+		},
+		{
+			"name": "Testing & Application Security",
+			"keywords": [
+				"Automated Testing",
+				"Application Security",
+				"OWASP",
+				"Security-focused Testing",
+				"Secure Data Isolation"
+			]
 		}
 	],
 	"languages": [
@@ -189,44 +280,74 @@
 		},
 		{
 			"language": "English",
-			"fluency": "C2 - Proficient"
+			"fluency": "C2 - Advanced Professional"
 		}
 	],
 	"projects": [
 		{
-			"name": "adev-lru",
-			"description": "Lightweight and highly efficient LRU Cache library for JavaScript and TypeScript.\n\nPublished on NPM with support for persistence (LocalStorage + IndexedDB), TTL, and O(1) operations.",
+			"name": "AI Job Hunter — Personal Agent System",
+			"description": "Personal agent system that discovers and normalizes job listings, evaluates eligibility with custom tools and deterministic rules (location restrictions, payment compatibility, role classification), and generates tailored CVs and cover letters. Combines multi-stage orchestration, structured LLM output, and rule-based checks over live web data.",
 			"highlights": [
-				"O(1) Performance",
-				"NPM Package",
-				"Data Structures",
+				"AI Agents",
+				"Multi-stage Orchestration",
+				"Custom Tools",
+				"Structured Outputs",
+				"Web Research",
+				"CV Tailoring"
+			],
+			"url": "",
+			"github": ""
+		},
+		{
+			"name": "AI Security Testing Agents — Personal Project",
+			"description": "Personal agent-based security testing toolkit that checks web applications against OWASP guidelines and vulnerability checklists to surface issues during development. Complements manual review and professional penetration testing.",
+			"highlights": [
+				"AI Agents",
+				"Application Security",
+				"OWASP",
+				"Security Testing",
+				"Vulnerability Checklists",
+				"Automation"
+			],
+			"url": "",
+			"github": ""
+		},
+		{
+			"name": "adev-lru",
+			"description": "TypeScript library implementing an O(1) LRU cache with TTL and persistence layers for LocalStorage and IndexedDB. Published on npm.",
+			"highlights": [
 				"TypeScript",
-				"Persistence Layer"
+				"LRU Cache",
+				"O(1) Operations",
+				"npm Package",
+				"IndexedDB",
+				"LocalStorage"
 			],
 			"url": "https://www.npmjs.com/package/adev-lru",
 			"github": "https://github.com/Armando284/adev-lru"
 		},
 		{
 			"name": "tkt",
-			"description": "Blazing-fast Go CLI that turns TODO comments into tickets, auto-manages git branches, tracks time, and integrates with Neovim.",
+			"description": "Go CLI that converts TODO comments into tickets, manages git branches, tracks time, and integrates with Neovim through a real-time file watcher.",
 			"highlights": [
-				"Developer Productivity",
-				"Go CLI",
-				"Git Integration",
-				"Time Tracking",
-				"Real-time File Watcher"
+				"Go",
+				"CLI",
+				"Git Automation",
+				"Neovim Integration",
+				"File Watching",
+				"Developer Productivity"
 			],
 			"url": "",
 			"github": "https://github.com/Armando284/tkt"
 		},
 		{
 			"name": "Collaborative Whiteboard",
-			"description": "Low-bandwidth real-time collaborative drawing application optimized for unstable networks and Apple Pencil.",
+			"description": "Low-bandwidth real-time collaborative drawing app optimized for unstable networks and Apple Pencil, using WebSockets and RLE compression.",
 			"highlights": [
-				"Real-time Systems",
+				"Real-time",
 				"WebSockets",
-				"Data Compression (RLE)",
-				"Performance Optimization",
+				"RLE Compression",
+				"Performance",
 				"Vanilla JS"
 			],
 			"url": "https://whiteboard-five-gamma.vercel.app/",
@@ -234,24 +355,23 @@
 		},
 		{
 			"name": "Life Simulation",
-			"description": "Neuroevolution simulation combining Neural Networks and Genetic Algorithms. Virtual creatures evolve behaviors to survive in a dynamic environment.",
+			"description": "Neuroevolution simulation combining neural networks and genetic algorithms; virtual creatures evolve survival behaviors in a dynamic, canvas-rendered environment.",
 			"highlights": [
 				"Neural Networks",
 				"Genetic Algorithms",
-				"Canvas Visualization",
+				"Canvas",
 				"Artificial Life",
-				"Algorithmic Thinking"
+				"Algorithms"
 			],
 			"url": "https://life-simulation-self.vercel.app/",
 			"github": "https://github.com/Armando284/life-simulation"
 		},
 		{
 			"name": "Taller Web CU",
-			"description": "Personal page and blog for Cuban market freelance web development services.",
+			"description": "Personal blog and services page for freelance web development, technical writing, and project case studies.",
 			"highlights": [
 				"Blog",
-				"Freelance",
-				"Cuban Market",
+				"Freelance Services",
 				"Web Development",
 				"Personal Brand"
 			],
